@@ -1,0 +1,16 @@
+{
+  "id": "be-007-jwt-vulnerabilities",
+  "title": "JWT Verification Vulnerabilities",
+  "category": "backend",
+  "difficulty": 4,
+  "estimatedMinutes": 25,
+  "tags": ["security", "jwt", "authentication", "tokens", "cryptography"],
+  "prerequisites": [],
+  "concepts": ["JWT structure", "algorithm confusion attacks", "token expiration", "signature verification"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/jwt.ts"],
+    "testFiles": ["src/__tests__/jwt.test.ts"],
+    "solutionFiles": ["solution/jwt.ts"]
+  }
+}

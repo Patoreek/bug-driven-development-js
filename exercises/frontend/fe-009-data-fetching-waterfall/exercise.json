@@ -1,0 +1,16 @@
+{
+  "id": "fe-009-data-fetching-waterfall",
+  "title": "Data Fetching Waterfall",
+  "category": "frontend",
+  "difficulty": 3,
+  "estimatedMinutes": 25,
+  "tags": ["react", "data-fetching", "performance", "Promise.all", "async"],
+  "prerequisites": [],
+  "concepts": ["request waterfalls", "parallel data fetching", "Promise.all"],
+  "files": {
+    "buggy": ["src/OrderDetails.tsx"],
+    "solution": ["solution/OrderDetails.tsx"],
+    "test": ["src/__tests__/OrderDetails.test.tsx"],
+    "readOnly": []
+  }
+}

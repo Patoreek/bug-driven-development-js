@@ -1,0 +1,16 @@
+{
+  "id": "fs-005-revalidation-stale-data",
+  "title": "Revalidation: Stale Data After Mutation",
+  "category": "fullstack",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["nextjs", "revalidation", "cache", "server-actions", "mutations"],
+  "prerequisites": [],
+  "concepts": ["cache revalidation", "revalidatePath", "revalidateTag", "stale data"],
+  "files": {
+    "buggy": ["src/bookmarks.ts"],
+    "solution": ["solution/bookmarks.ts"],
+    "test": ["src/__tests__/bookmarks.test.ts"],
+    "readOnly": []
+  }
+}

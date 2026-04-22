@@ -1,0 +1,16 @@
+{
+  "id": "be-017-graceful-shutdown",
+  "title": "Graceful Shutdown",
+  "category": "backend",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["server", "shutdown", "signals", "connection-draining", "reliability"],
+  "prerequisites": [],
+  "concepts": ["graceful shutdown", "SIGTERM/SIGINT handling", "connection draining", "process lifecycle"],
+  "files": {
+    "buggy": ["src/server.ts"],
+    "solution": ["solution/server.ts"],
+    "test": ["src/__tests__/server.test.ts"],
+    "readOnly": []
+  }
+}

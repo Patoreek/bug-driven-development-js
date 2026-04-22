@@ -1,0 +1,16 @@
+{
+  "id": "be-018-transaction-rollback",
+  "title": "Transaction Rollback",
+  "category": "backend",
+  "difficulty": 4,
+  "estimatedMinutes": 25,
+  "tags": ["database", "transactions", "rollback", "atomicity", "data-integrity"],
+  "prerequisites": [],
+  "concepts": ["database transactions", "atomicity", "rollback on failure", "data consistency"],
+  "files": {
+    "buggy": ["src/orders.ts"],
+    "solution": ["solution/orders.ts"],
+    "test": ["src/__tests__/orders.test.ts"],
+    "readOnly": []
+  }
+}

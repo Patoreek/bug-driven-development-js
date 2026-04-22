@@ -1,0 +1,16 @@
+{
+  "id": "test-003-async-test",
+  "title": "Async Test Timing",
+  "category": "testing",
+  "difficulty": 3,
+  "tags": ["testing", "vitest", "async", "react-testing-library", "waitFor"],
+  "concepts": ["async testing", "waitFor", "findBy queries", "act warnings"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/SearchResults.test.tsx"],
+    "testFiles": [],
+    "solutionFiles": ["solution/SearchResults.test.tsx"]
+  }
+}

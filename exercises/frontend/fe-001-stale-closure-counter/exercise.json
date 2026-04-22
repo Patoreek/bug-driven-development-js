@@ -1,0 +1,16 @@
+{
+  "id": "fe-001-stale-closure-counter",
+  "title": "Stale Closure Counter",
+  "category": "frontend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["react", "hooks", "closures", "useState", "setTimeout"],
+  "prerequisites": [],
+  "concepts": ["stale closures", "functional state updates", "React useState"],
+  "files": {
+    "buggy": ["src/Counter.tsx"],
+    "solution": ["solution/Counter.tsx"],
+    "test": ["src/__tests__/Counter.test.tsx"],
+    "readOnly": []
+  }
+}

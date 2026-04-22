@@ -1,0 +1,16 @@
+{
+  "id": "fs-006-optimistic-update-rollback",
+  "title": "Optimistic Update Rollback: Missing Revert on Server Failure",
+  "category": "fullstack",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["optimistic-updates", "rollback", "state-management", "error-handling", "fullstack"],
+  "prerequisites": [],
+  "concepts": ["optimistic UI updates", "rollback on failure", "state snapshots", "error recovery"],
+  "files": {
+    "buggy": ["src/todoList.ts"],
+    "solution": ["solution/todoList.ts"],
+    "test": ["src/__tests__/todoList.test.ts"],
+    "readOnly": []
+  }
+}

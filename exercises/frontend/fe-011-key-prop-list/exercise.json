@@ -1,0 +1,16 @@
+{
+  "id": "fe-011-key-prop-list",
+  "title": "Key Prop Chaos: When Index Keys Break Your List",
+  "category": "frontend",
+  "difficulty": 2,
+  "tags": ["react", "keys", "reconciliation", "lists"],
+  "concepts": ["React key prop", "reconciliation algorithm", "stable identity"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/TodoList.tsx"],
+    "testFiles": ["src/__tests__/TodoList.test.tsx"],
+    "solutionFiles": ["solution/TodoList.tsx"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "fs-008-api-overfetching",
+  "title": "API Overfetching: Returning Unnecessary Data to the Client",
+  "category": "fullstack",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["api-design", "overfetching", "performance", "data-shaping", "typescript"],
+  "prerequisites": [],
+  "concepts": ["overfetching", "data projection", "Pick and Omit types", "API response shaping"],
+  "files": {
+    "buggy": ["src/userApi.ts"],
+    "solution": ["solution/userApi.ts"],
+    "test": ["src/__tests__/userApi.test.ts"],
+    "readOnly": []
+  }
+}

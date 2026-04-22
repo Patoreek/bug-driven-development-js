@@ -1,0 +1,16 @@
+{
+  "id": "test-001-missing-assertions",
+  "title": "Missing Assertions",
+  "category": "testing",
+  "difficulty": 2,
+  "tags": ["testing", "vitest", "assertions", "react-testing-library"],
+  "concepts": ["meaningful assertions", "toBeInTheDocument", "test value verification"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/UserCard.test.tsx"],
+    "testFiles": [],
+    "solutionFiles": ["solution/UserCard.test.tsx"]
+  }
+}

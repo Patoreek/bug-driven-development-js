@@ -1,0 +1,16 @@
+{
+  "id": "be-005-error-swallowing",
+  "title": "Error Swallowing",
+  "category": "backend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["error-handling", "debugging", "api", "typescript"],
+  "prerequisites": [],
+  "concepts": ["error propagation", "typed errors", "meaningful error messages"],
+  "files": {
+    "buggy": ["src/order-service.ts"],
+    "solution": ["solution/order-service.ts"],
+    "test": ["src/__tests__/order-service.test.ts"],
+    "readOnly": []
+  }
+}

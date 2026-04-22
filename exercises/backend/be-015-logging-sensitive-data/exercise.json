@@ -1,0 +1,16 @@
+{
+  "id": "be-015-logging-sensitive-data",
+  "title": "Logging Sensitive Data",
+  "category": "backend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["security", "logging", "pii", "data-privacy", "compliance"],
+  "prerequisites": [],
+  "concepts": ["sensitive data redaction", "PII protection", "structured logging", "compliance"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/logger.ts"],
+    "testFiles": ["src/__tests__/logger.test.ts"],
+    "solutionFiles": ["solution/logger.ts"]
+  }
+}

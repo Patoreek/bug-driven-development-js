@@ -1,0 +1,16 @@
+{
+  "id": "be-008-env-var-exposure",
+  "title": "Environment Variable Exposure",
+  "category": "backend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["security", "configuration", "env-vars", "api", "information-disclosure"],
+  "prerequisites": [],
+  "concepts": ["environment variable safety", "information disclosure", "debug endpoints", "secret filtering"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/config.ts"],
+    "testFiles": ["src/__tests__/config.test.ts"],
+    "solutionFiles": ["solution/config.ts"]
+  }
+}

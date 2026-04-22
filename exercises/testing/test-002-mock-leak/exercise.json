@@ -1,0 +1,16 @@
+{
+  "id": "test-002-mock-leak",
+  "title": "Mock Leak Between Tests",
+  "category": "testing",
+  "difficulty": 2,
+  "tags": ["testing", "vitest", "mocking", "test-isolation"],
+  "concepts": ["mock cleanup", "test isolation", "vi.restoreAllMocks", "afterEach"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/NotificationService.test.ts"],
+    "testFiles": [],
+    "solutionFiles": ["solution/NotificationService.test.ts"]
+  }
+}

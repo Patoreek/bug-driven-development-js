@@ -1,0 +1,16 @@
+{
+  "id": "fs-002-server-client-boundary",
+  "title": "Server-Client Boundary: Missing 'use client' and Non-Serializable Props",
+  "category": "fullstack",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["nextjs", "server-components", "client-components", "use-client", "serialization"],
+  "prerequisites": [],
+  "concepts": ["server-client boundary", "use client directive", "serializable props"],
+  "files": {
+    "buggy": ["src/UserProfile.tsx", "src/LikeButton.tsx"],
+    "solution": ["solution/UserProfile.tsx", "solution/LikeButton.tsx"],
+    "test": ["src/__tests__/LikeButton.test.tsx"],
+    "readOnly": []
+  }
+}

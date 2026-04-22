@@ -1,0 +1,16 @@
+{
+  "id": "fe-002-unnecessary-rerenders",
+  "title": "Unnecessary Re-renders",
+  "category": "frontend",
+  "difficulty": 2,
+  "estimatedMinutes": 20,
+  "tags": ["react", "performance", "memo", "useCallback", "useMemo"],
+  "prerequisites": [],
+  "concepts": ["React.memo", "useCallback", "useMemo", "referential equality"],
+  "files": {
+    "buggy": ["src/TodoApp.tsx"],
+    "solution": ["solution/TodoApp.tsx"],
+    "test": ["src/__tests__/TodoApp.test.tsx"],
+    "readOnly": []
+  }
+}

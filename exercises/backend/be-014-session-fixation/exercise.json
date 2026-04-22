@@ -1,0 +1,16 @@
+{
+  "id": "be-014-session-fixation",
+  "title": "Session Fixation",
+  "category": "backend",
+  "difficulty": 4,
+  "estimatedMinutes": 25,
+  "tags": ["security", "session", "authentication", "cookies", "session-fixation"],
+  "prerequisites": [],
+  "concepts": ["session fixation attacks", "session regeneration", "secure cookie attributes", "authentication security"],
+  "files": {
+    "buggy": ["src/session.ts"],
+    "solution": ["solution/session.ts"],
+    "test": ["src/__tests__/session.test.ts"],
+    "readOnly": []
+  }
+}

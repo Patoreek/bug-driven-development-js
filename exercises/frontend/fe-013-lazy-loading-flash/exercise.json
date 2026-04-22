@@ -1,0 +1,16 @@
+{
+  "id": "fe-013-lazy-loading-flash",
+  "title": "Lazy Loading Flash: The Missing Suspense Boundary",
+  "category": "frontend",
+  "difficulty": 3,
+  "tags": ["react", "lazy-loading", "suspense", "code-splitting"],
+  "concepts": ["React.lazy", "Suspense boundaries", "code splitting", "loading states"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/App.tsx", "src/Dashboard.tsx"],
+    "testFiles": ["src/__tests__/App.test.tsx"],
+    "solutionFiles": ["solution/App.tsx", "solution/Dashboard.tsx"]
+  }
+}

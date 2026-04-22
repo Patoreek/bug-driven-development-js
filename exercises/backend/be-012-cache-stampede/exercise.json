@@ -1,0 +1,16 @@
+{
+  "id": "be-012-cache-stampede",
+  "title": "Cache Stampede",
+  "category": "backend",
+  "difficulty": 4,
+  "estimatedMinutes": 25,
+  "tags": ["caching", "concurrency", "performance", "mutex", "thundering-herd"],
+  "prerequisites": [],
+  "concepts": ["cache stampede", "mutex/lock pattern", "promise coalescing", "concurrent requests"],
+  "files": {
+    "buggy": ["src/cache.ts"],
+    "solution": ["solution/cache.ts"],
+    "test": ["src/__tests__/cache.test.ts"],
+    "readOnly": []
+  }
+}

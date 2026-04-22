@@ -1,0 +1,16 @@
+{
+  "id": "fe-005-ref-vs-state",
+  "title": "Ref vs State for Interval Timer",
+  "category": "frontend",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["react", "hooks", "useRef", "useState", "setInterval"],
+  "prerequisites": [],
+  "concepts": ["useRef vs useState", "mutable references", "intervals in React"],
+  "files": {
+    "buggy": ["src/Stopwatch.tsx"],
+    "solution": ["solution/Stopwatch.tsx"],
+    "test": ["src/__tests__/Stopwatch.test.tsx"],
+    "readOnly": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "fe-020-compound-component",
+  "title": "Compound Components: Escaping Prop Drilling Hell",
+  "category": "frontend",
+  "difficulty": 4,
+  "tags": ["react", "compound-components", "context", "prop-drilling", "patterns"],
+  "concepts": ["compound component pattern", "React context", "prop drilling", "component composition"],
+  "estimatedMinutes": 35,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/Accordion.tsx"],
+    "testFiles": ["src/__tests__/Accordion.test.tsx"],
+    "solutionFiles": ["solution/Accordion.tsx"]
+  }
+}

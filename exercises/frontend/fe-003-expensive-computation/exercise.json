@@ -1,0 +1,16 @@
+{
+  "id": "fe-003-expensive-computation",
+  "title": "Expensive Computation",
+  "category": "frontend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["react", "performance", "useMemo", "optimization"],
+  "prerequisites": [],
+  "concepts": ["useMemo", "expensive computations", "memoization"],
+  "files": {
+    "buggy": ["src/ProductList.tsx"],
+    "solution": ["solution/ProductList.tsx"],
+    "test": ["src/__tests__/ProductList.test.tsx"],
+    "readOnly": []
+  }
+}

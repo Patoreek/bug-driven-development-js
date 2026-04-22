@@ -1,0 +1,1 @@
+The `key` is currently set to `index` — the position in the array. When you remove item 0, what was at index 1 is now at index 0. React thinks it's the same component and reuses its DOM state (like checkbox values).

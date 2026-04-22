@@ -1,0 +1,16 @@
+{
+  "id": "fs-007-parallel-routes",
+  "title": "Parallel Routes: Missing Default Slots and State Handling",
+  "category": "fullstack",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["nextjs", "parallel-routes", "layout", "error-handling", "loading-states"],
+  "prerequisites": [],
+  "concepts": ["parallel routes", "slot resolution", "default routes", "loading and error states"],
+  "files": {
+    "buggy": ["src/layoutRouter.ts"],
+    "solution": ["solution/layoutRouter.ts"],
+    "test": ["src/__tests__/layoutRouter.test.ts"],
+    "readOnly": []
+  }
+}

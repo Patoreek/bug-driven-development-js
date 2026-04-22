@@ -1,0 +1,16 @@
+{
+  "id": "fe-016-css-specificity",
+  "title": "CSS Specificity Wars: When Styles Won't Apply",
+  "category": "frontend",
+  "difficulty": 2,
+  "tags": ["css", "specificity", "css-modules", "styling"],
+  "concepts": ["CSS specificity", "CSS modules", "inline styles", "selector weight"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/StatusBadge.tsx"],
+    "testFiles": ["src/__tests__/StatusBadge.test.tsx"],
+    "solutionFiles": ["solution/StatusBadge.tsx"]
+  }
+}

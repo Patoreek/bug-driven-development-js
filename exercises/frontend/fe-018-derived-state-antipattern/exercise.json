@@ -1,0 +1,16 @@
+{
+  "id": "fe-018-derived-state-antipattern",
+  "title": "Derived State: The Unnecessary Copy",
+  "category": "frontend",
+  "difficulty": 3,
+  "tags": ["react", "state", "useEffect", "derived-state", "anti-pattern"],
+  "concepts": ["derived state", "props-to-state copying", "useMemo", "key prop reset"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/UserProfile.tsx"],
+    "testFiles": ["src/__tests__/UserProfile.test.tsx"],
+    "solutionFiles": ["solution/UserProfile.tsx"]
+  }
+}

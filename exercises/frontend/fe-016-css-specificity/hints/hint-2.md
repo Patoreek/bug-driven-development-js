@@ -1,0 +1,1 @@
+The class lookup is `statusClasses["default"]` — it's hardcoded instead of using the `status` prop. And the inline `style` has a hardcoded `backgroundColor` of gray, which will override any class-based colors because inline styles have higher specificity.

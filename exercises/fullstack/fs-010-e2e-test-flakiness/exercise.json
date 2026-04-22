@@ -1,0 +1,16 @@
+{
+  "id": "fs-010-e2e-test-flakiness",
+  "title": "E2E Test Flakiness: Timing-Dependent Assertions",
+  "category": "fullstack",
+  "difficulty": 4,
+  "estimatedMinutes": 25,
+  "tags": ["testing", "async", "flaky-tests", "waitFor", "findBy"],
+  "prerequisites": [],
+  "concepts": ["async testing patterns", "waitFor queries", "removing artificial delays", "test stability"],
+  "files": {
+    "buggy": ["src/NotificationList.tsx", "src/__tests__/NotificationList.test.tsx"],
+    "solution": ["solution/NotificationList.tsx", "solution/NotificationList.test.tsx"],
+    "test": ["src/__tests__/NotificationList.test.tsx"],
+    "readOnly": ["src/NotificationList.tsx"]
+  }
+}

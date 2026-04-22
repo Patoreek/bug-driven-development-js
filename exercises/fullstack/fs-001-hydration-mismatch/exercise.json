@@ -1,0 +1,16 @@
+{
+  "id": "fs-001-hydration-mismatch",
+  "title": "Hydration Mismatch: Server vs Client Rendering",
+  "category": "fullstack",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["nextjs", "ssr", "hydration", "useEffect", "react"],
+  "prerequisites": [],
+  "concepts": ["hydration", "server-side rendering", "useEffect for client-only values"],
+  "files": {
+    "buggy": ["src/Greeting.tsx"],
+    "solution": ["solution/Greeting.tsx"],
+    "test": ["src/__tests__/Greeting.test.tsx"],
+    "readOnly": []
+  }
+}

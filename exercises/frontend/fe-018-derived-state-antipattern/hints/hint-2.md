@@ -1,0 +1,1 @@
+`useEffect` runs **after** render, so the first render after a prop change shows stale state values. If `fullName`, `initials`, `accountAge`, and `emailDomain` are all derived from the `user` prop, you can compute them as regular `const` variables in the component body — no state needed.

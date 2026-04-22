@@ -1,0 +1,16 @@
+{
+  "id": "be-009-middleware-order",
+  "title": "Middleware Ordering Bug",
+  "category": "backend",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["middleware", "express", "security", "request-pipeline", "ordering"],
+  "prerequisites": [],
+  "concepts": ["middleware execution order", "request pipeline", "authentication flow", "body parsing"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/middleware.ts"],
+    "testFiles": ["src/__tests__/middleware.test.ts"],
+    "solutionFiles": ["solution/middleware.ts"]
+  }
+}

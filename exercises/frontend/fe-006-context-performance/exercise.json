@@ -1,0 +1,16 @@
+{
+  "id": "fe-006-context-performance",
+  "title": "Context Performance",
+  "category": "frontend",
+  "difficulty": 3,
+  "estimatedMinutes": 25,
+  "tags": ["react", "context", "performance", "useMemo", "optimization"],
+  "prerequisites": [],
+  "concepts": ["React Context", "context splitting", "memoization", "re-render optimization"],
+  "files": {
+    "buggy": ["src/AppContext.tsx"],
+    "solution": ["solution/AppContext.tsx"],
+    "test": ["src/__tests__/AppContext.test.tsx"],
+    "readOnly": []
+  }
+}

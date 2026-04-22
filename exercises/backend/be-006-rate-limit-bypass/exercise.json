@@ -1,0 +1,16 @@
+{
+  "id": "be-006-rate-limit-bypass",
+  "title": "Rate Limiter Bypass",
+  "category": "backend",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["security", "rate-limiting", "headers", "ip-spoofing"],
+  "prerequisites": [],
+  "concepts": ["rate limiting", "IP spoofing", "trusted proxies", "X-Forwarded-For"],
+  "files": {
+    "buggy": ["src/rate-limiter.ts"],
+    "solution": ["solution/rate-limiter.ts"],
+    "test": ["src/__tests__/rate-limiter.test.ts"],
+    "readOnly": []
+  }
+}

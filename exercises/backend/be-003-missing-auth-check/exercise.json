@@ -1,0 +1,16 @@
+{
+  "id": "be-003-missing-auth-check",
+  "title": "Missing Authorization Check",
+  "category": "backend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["auth", "authorization", "security", "api", "middleware"],
+  "prerequisites": [],
+  "concepts": ["authorization vs authentication", "role-based access control", "API security"],
+  "files": {
+    "buggy": ["src/handler.ts"],
+    "solution": ["solution/handler.ts"],
+    "test": ["src/__tests__/handler.test.ts"],
+    "readOnly": []
+  }
+}

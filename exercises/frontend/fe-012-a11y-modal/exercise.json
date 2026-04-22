@@ -1,0 +1,16 @@
+{
+  "id": "fe-012-a11y-modal",
+  "title": "Accessible Modal: More Than Just a Div",
+  "category": "frontend",
+  "difficulty": 3,
+  "tags": ["react", "accessibility", "aria", "focus-management"],
+  "concepts": ["ARIA roles", "focus trapping", "keyboard navigation", "a11y"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/Modal.tsx"],
+    "testFiles": ["src/__tests__/Modal.test.tsx"],
+    "solutionFiles": ["solution/Modal.tsx"]
+  }
+}

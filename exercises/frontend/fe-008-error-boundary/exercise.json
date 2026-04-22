@@ -1,0 +1,16 @@
+{
+  "id": "fe-008-error-boundary",
+  "title": "Error Boundary",
+  "category": "frontend",
+  "difficulty": 2,
+  "estimatedMinutes": 20,
+  "tags": ["react", "error-boundary", "error-handling", "class-component"],
+  "prerequisites": [],
+  "concepts": ["error boundaries", "componentDidCatch", "getDerivedStateFromError", "graceful degradation"],
+  "files": {
+    "buggy": ["src/Dashboard.tsx"],
+    "solution": ["solution/Dashboard.tsx"],
+    "test": ["src/__tests__/Dashboard.test.tsx"],
+    "readOnly": []
+  }
+}

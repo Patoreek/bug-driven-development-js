@@ -1,0 +1,16 @@
+{
+  "id": "be-013-xss-in-api-response",
+  "title": "XSS in API Response",
+  "category": "backend",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["security", "xss", "sanitization", "html-encoding", "injection"],
+  "prerequisites": [],
+  "concepts": ["cross-site scripting", "HTML entity encoding", "output encoding", "input sanitization"],
+  "files": {
+    "buggy": ["src/render.ts"],
+    "solution": ["solution/render.ts"],
+    "test": ["src/__tests__/render.test.ts"],
+    "readOnly": []
+  }
+}

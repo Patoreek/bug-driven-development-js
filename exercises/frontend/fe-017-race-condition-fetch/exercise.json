@@ -1,0 +1,16 @@
+{
+  "id": "fe-017-race-condition-fetch",
+  "title": "Race Condition: When Slow Responses Win",
+  "category": "frontend",
+  "difficulty": 4,
+  "tags": ["react", "async", "race-condition", "AbortController", "fetch"],
+  "concepts": ["race conditions", "AbortController", "async cleanup", "stale closures"],
+  "estimatedMinutes": 30,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/SearchResults.tsx"],
+    "testFiles": ["src/__tests__/SearchResults.test.tsx"],
+    "solutionFiles": ["solution/SearchResults.tsx"]
+  }
+}

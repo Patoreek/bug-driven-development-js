@@ -1,0 +1,16 @@
+{
+  "id": "fe-014-event-listener-leak",
+  "title": "Event Listener Leak: The Cleanup That Never Happened",
+  "category": "frontend",
+  "difficulty": 3,
+  "tags": ["react", "useEffect", "memory-leak", "event-listeners", "cleanup"],
+  "concepts": ["useEffect cleanup", "event listener lifecycle", "memory leaks"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/WindowSize.tsx"],
+    "testFiles": ["src/__tests__/WindowSize.test.tsx"],
+    "solutionFiles": ["solution/WindowSize.tsx"]
+  }
+}

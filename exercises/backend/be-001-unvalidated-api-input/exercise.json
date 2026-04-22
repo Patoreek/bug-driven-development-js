@@ -1,0 +1,16 @@
+{
+  "id": "be-001-unvalidated-api-input",
+  "title": "Unvalidated API Input",
+  "category": "backend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["api", "validation", "zod", "security", "next.js"],
+  "prerequisites": [],
+  "concepts": ["input validation", "Zod schemas", "API error handling"],
+  "files": {
+    "buggy": ["src/handler.ts"],
+    "solution": ["solution/handler.ts"],
+    "test": ["src/__tests__/handler.test.ts"],
+    "readOnly": []
+  }
+}

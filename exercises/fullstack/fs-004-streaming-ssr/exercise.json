@@ -1,0 +1,16 @@
+{
+  "id": "fs-004-streaming-ssr",
+  "title": "Streaming SSR: Blocking Fetches Prevent Progressive Rendering",
+  "category": "fullstack",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["nextjs", "streaming", "suspense", "ssr", "performance"],
+  "prerequisites": [],
+  "concepts": ["streaming SSR", "Suspense boundaries", "async server components", "progressive rendering"],
+  "files": {
+    "buggy": ["src/Dashboard.tsx"],
+    "solution": ["solution/Dashboard.tsx"],
+    "test": ["src/__tests__/Dashboard.test.tsx"],
+    "readOnly": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "fe-015-redux-mutation",
+  "title": "Redux Mutation: The Reducer That Broke Immutability",
+  "category": "frontend",
+  "difficulty": 2,
+  "tags": ["react", "redux", "immutability", "state-management"],
+  "concepts": ["immutable updates", "Redux reducers", "spread operator", "state mutation"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/cartReducer.ts"],
+    "testFiles": ["src/__tests__/cartReducer.test.ts"],
+    "solutionFiles": ["solution/cartReducer.ts"]
+  }
+}

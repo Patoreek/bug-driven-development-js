@@ -1,0 +1,16 @@
+{
+  "id": "be-010-api-error-responses",
+  "title": "API Error Responses",
+  "category": "backend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["api", "error-handling", "http", "status-codes", "consistency"],
+  "prerequisites": [],
+  "concepts": ["HTTP status codes", "error response format", "API design consistency"],
+  "files": {
+    "buggy": ["src/handlers.ts"],
+    "solution": ["solution/handlers.ts"],
+    "test": ["src/__tests__/handlers.test.ts"],
+    "readOnly": []
+  }
+}

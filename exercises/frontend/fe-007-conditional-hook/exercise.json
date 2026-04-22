@@ -1,0 +1,16 @@
+{
+  "id": "fe-007-conditional-hook",
+  "title": "Conditional Hook Call",
+  "category": "frontend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["react", "hooks", "rules-of-hooks", "useState", "useEffect"],
+  "prerequisites": [],
+  "concepts": ["rules of hooks", "conditional rendering", "hook call order"],
+  "files": {
+    "buggy": ["src/UserGreeting.tsx"],
+    "solution": ["solution/UserGreeting.tsx"],
+    "test": ["src/__tests__/UserGreeting.test.tsx"],
+    "readOnly": []
+  }
+}

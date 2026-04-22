@@ -1,0 +1,16 @@
+{
+  "id": "be-004-n-plus-one-query",
+  "title": "N+1 Query Problem",
+  "category": "backend",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["performance", "database", "n-plus-one", "optimization"],
+  "prerequisites": [],
+  "concepts": ["N+1 query problem", "batch queries", "database optimization"],
+  "files": {
+    "buggy": ["src/user-posts.ts"],
+    "solution": ["solution/user-posts.ts"],
+    "test": ["src/__tests__/user-posts.test.ts"],
+    "readOnly": []
+  }
+}

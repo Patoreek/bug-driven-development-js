@@ -1,0 +1,16 @@
+{
+  "id": "fe-004-useeffect-infinite-loop",
+  "title": "useEffect Infinite Loop",
+  "category": "frontend",
+  "difficulty": 1,
+  "estimatedMinutes": 10,
+  "tags": ["react", "hooks", "useEffect", "dependency-array"],
+  "prerequisites": [],
+  "concepts": ["useEffect dependency array", "referential equality", "infinite loops"],
+  "files": {
+    "buggy": ["src/UserProfile.tsx"],
+    "solution": ["solution/UserProfile.tsx"],
+    "test": ["src/__tests__/UserProfile.test.tsx"],
+    "readOnly": []
+  }
+}

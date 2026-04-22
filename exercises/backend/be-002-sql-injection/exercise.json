@@ -1,0 +1,16 @@
+{
+  "id": "be-002-sql-injection",
+  "title": "SQL Injection in Query Builder",
+  "category": "backend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["sql", "security", "injection", "parameterized-queries"],
+  "prerequisites": [],
+  "concepts": ["SQL injection", "parameterized queries", "query builder patterns"],
+  "files": {
+    "buggy": ["src/query-builder.ts"],
+    "solution": ["solution/query-builder.ts"],
+    "test": ["src/__tests__/query-builder.test.ts"],
+    "readOnly": []
+  }
+}

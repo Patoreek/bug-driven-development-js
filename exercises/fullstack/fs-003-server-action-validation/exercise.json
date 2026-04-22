@@ -1,0 +1,16 @@
+{
+  "id": "fs-003-server-action-validation",
+  "title": "Server Action Validation: Trusting Raw Form Data",
+  "category": "fullstack",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["nextjs", "server-actions", "zod", "validation", "security"],
+  "prerequisites": [],
+  "concepts": ["server action validation", "Zod schemas", "form data parsing"],
+  "files": {
+    "buggy": ["src/actions.ts"],
+    "solution": ["solution/actions.ts"],
+    "test": ["src/__tests__/actions.test.ts"],
+    "readOnly": []
+  }
+}

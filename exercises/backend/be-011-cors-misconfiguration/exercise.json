@@ -1,0 +1,16 @@
+{
+  "id": "be-011-cors-misconfiguration",
+  "title": "CORS Misconfiguration",
+  "category": "backend",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["cors", "security", "http-headers", "preflight", "options"],
+  "prerequisites": [],
+  "concepts": ["CORS policy", "preflight requests", "Access-Control headers", "origin validation"],
+  "files": {
+    "buggy": ["src/cors.ts"],
+    "solution": ["solution/cors.ts"],
+    "test": ["src/__tests__/cors.test.ts"],
+    "readOnly": []
+  }
+}

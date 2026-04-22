@@ -1,0 +1,16 @@
+{
+  "id": "fe-019-portal-event-bubbling",
+  "title": "Portal Surprise: When Clicks Bubble Through the React Tree",
+  "category": "frontend",
+  "difficulty": 3,
+  "tags": ["react", "portal", "event-bubbling", "createPortal"],
+  "concepts": ["React portals", "event bubbling", "React tree vs DOM tree", "stopPropagation"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/Dropdown.tsx"],
+    "testFiles": ["src/__tests__/Dropdown.test.tsx"],
+    "solutionFiles": ["solution/Dropdown.tsx"]
+  }
+}

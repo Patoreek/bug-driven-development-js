@@ -1,0 +1,16 @@
+{
+  "id": "be-016-rest-api-design",
+  "title": "REST API Design",
+  "category": "backend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["rest", "api-design", "http-methods", "status-codes", "routing"],
+  "prerequisites": [],
+  "concepts": ["REST conventions", "HTTP methods", "status codes", "resource-based URLs"],
+  "files": {
+    "buggy": ["src/router.ts"],
+    "solution": ["solution/router.ts"],
+    "test": ["src/__tests__/router.test.ts"],
+    "readOnly": []
+  }
+}

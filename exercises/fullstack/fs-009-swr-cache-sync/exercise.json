@@ -1,0 +1,16 @@
+{
+  "id": "fs-009-swr-cache-sync",
+  "title": "SWR Cache Sync: Stale Data After Mutation",
+  "category": "fullstack",
+  "difficulty": 4,
+  "estimatedMinutes": 25,
+  "tags": ["swr", "cache", "mutation", "data-fetching", "react"],
+  "prerequisites": [],
+  "concepts": ["SWR cache management", "mutate after POST", "stale-while-revalidate"],
+  "files": {
+    "buggy": ["src/commentStore.ts"],
+    "solution": ["solution/commentStore.ts"],
+    "test": ["src/__tests__/commentStore.test.ts"],
+    "readOnly": []
+  }
+}

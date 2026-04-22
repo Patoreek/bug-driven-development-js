@@ -1,0 +1,1 @@
+Look into `AbortController` — a web API designed to cancel fetch requests. You create one, pass its `signal` to the fetch call, and call `abort()` when you want to cancel. In a `useEffect`, the cleanup function is the right place to call `abort()`.

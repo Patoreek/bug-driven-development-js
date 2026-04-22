@@ -1,0 +1,16 @@
+{
+  "id": "fe-010-uncontrolled-form",
+  "title": "Uncontrolled Form Reset",
+  "category": "frontend",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["react", "forms", "controlled-components", "useRef", "state"],
+  "prerequisites": [],
+  "concepts": ["controlled vs uncontrolled inputs", "form state management", "useRef"],
+  "files": {
+    "buggy": ["src/ContactForm.tsx"],
+    "solution": ["solution/ContactForm.tsx"],
+    "test": ["src/__tests__/ContactForm.test.tsx"],
+    "readOnly": []
+  }
+}
