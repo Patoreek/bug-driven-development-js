@@ -1,0 +1,16 @@
+{
+  "id": "test-008-timer-test",
+  "title": "Fix the Timer Test",
+  "category": "testing",
+  "difficulty": 3,
+  "tags": ["testing", "vitest", "fake-timers", "debounce"],
+  "concepts": ["vi.useFakeTimers", "vi.advanceTimersByTime", "timer cleanup"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/Debouncer.test.ts"],
+    "testFiles": [],
+    "solutionFiles": ["solution/Debouncer.test.ts"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ts-005-mapped-types",
+  "title": "Mapped Types Form Builder",
+  "category": "typescript",
+  "difficulty": 4,
+  "estimatedMinutes": 25,
+  "tags": ["typescript", "mapped-types", "template-literal-types", "conditional-types", "form"],
+  "prerequisites": ["ts-003-generic-constraints"],
+  "concepts": ["mapped types", "template literal types", "conditional types", "key remapping"],
+  "files": {
+    "buggy": ["src/formBuilder.ts"],
+    "solution": ["solution/formBuilder.ts"],
+    "test": ["src/__tests__/formBuilder.test.ts"],
+    "readOnly": []
+  }
+}

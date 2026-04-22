@@ -1,0 +1,16 @@
+{
+  "id": "test-009-error-path-test",
+  "title": "Test the Error Paths",
+  "category": "testing",
+  "difficulty": 4,
+  "tags": ["testing", "vitest", "error-handling", "edge-cases"],
+  "concepts": ["error path coverage", "boundary testing", "rejection testing"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/FileUploader.test.ts"],
+    "testFiles": [],
+    "solutionFiles": ["solution/FileUploader.test.ts"]
+  }
+}

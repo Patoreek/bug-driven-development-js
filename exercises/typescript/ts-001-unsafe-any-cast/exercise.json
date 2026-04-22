@@ -1,0 +1,16 @@
+{
+  "id": "ts-001-unsafe-any-cast",
+  "title": "Unsafe Any Cast",
+  "category": "typescript",
+  "difficulty": 2,
+  "estimatedMinutes": 15,
+  "tags": ["typescript", "any", "unknown", "type-safety", "runtime-validation"],
+  "prerequisites": [],
+  "concepts": ["unknown vs any", "type narrowing", "runtime validation", "type guards"],
+  "files": {
+    "buggy": ["src/parseApiResponse.ts"],
+    "solution": ["solution/parseApiResponse.ts"],
+    "test": ["src/__tests__/parseApiResponse.test.ts"],
+    "readOnly": []
+  }
+}

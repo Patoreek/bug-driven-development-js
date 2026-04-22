@@ -1,0 +1,16 @@
+{
+  "id": "ts-003-generic-constraints",
+  "title": "Generic Constraints",
+  "category": "typescript",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["typescript", "generics", "constraints", "extends", "keyof"],
+  "prerequisites": ["ts-001-unsafe-any-cast"],
+  "concepts": ["generic constraints", "extends keyword", "keyof operator", "type-safe generics"],
+  "files": {
+    "buggy": ["src/repository.ts"],
+    "solution": ["solution/repository.ts"],
+    "test": ["src/__tests__/repository.test.ts"],
+    "readOnly": []
+  }
+}

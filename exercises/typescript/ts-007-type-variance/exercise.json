@@ -1,0 +1,16 @@
+{
+  "id": "ts-007-type-variance",
+  "title": "Type Variance",
+  "category": "typescript",
+  "difficulty": 5,
+  "estimatedMinutes": 30,
+  "tags": ["typescript", "covariance", "contravariance", "type-safety", "generics"],
+  "prerequisites": ["ts-003-generic-constraints", "ts-004-type-predicate"],
+  "concepts": ["covariance", "contravariance", "invariance", "type soundness", "Liskov Substitution Principle"],
+  "files": {
+    "buggy": ["src/variance.ts"],
+    "solution": ["solution/variance.ts"],
+    "test": ["src/__tests__/variance.test.ts"],
+    "readOnly": []
+  }
+}

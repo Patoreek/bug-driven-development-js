@@ -1,0 +1,16 @@
+{
+  "id": "test-010-integration-boundary",
+  "title": "Fix the Integration Test Boundary",
+  "category": "testing",
+  "difficulty": 4,
+  "tags": ["testing", "vitest", "integration-testing", "react-testing-library", "dependency-injection"],
+  "concepts": ["mock boundaries", "integration vs unit testing", "dependency injection"],
+  "estimatedMinutes": 30,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/UserProfile.test.tsx"],
+    "testFiles": [],
+    "solutionFiles": ["solution/UserProfile.test.tsx"]
+  }
+}

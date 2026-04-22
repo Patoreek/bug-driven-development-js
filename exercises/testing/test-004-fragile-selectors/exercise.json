@@ -1,0 +1,16 @@
+{
+  "id": "test-004-fragile-selectors",
+  "title": "Fix the Fragile Test Selectors",
+  "category": "testing",
+  "difficulty": 2,
+  "tags": ["testing", "vitest", "react-testing-library", "accessible-queries"],
+  "concepts": ["RTL query priority", "accessible selectors", "resilient tests"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/TodoList.test.tsx"],
+    "testFiles": [],
+    "solutionFiles": ["solution/TodoList.test.tsx"]
+  }
+}

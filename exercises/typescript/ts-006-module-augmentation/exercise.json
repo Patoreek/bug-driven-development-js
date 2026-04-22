@@ -1,0 +1,16 @@
+{
+  "id": "ts-006-module-augmentation",
+  "title": "Module Augmentation",
+  "category": "typescript",
+  "difficulty": 4,
+  "estimatedMinutes": 25,
+  "tags": ["typescript", "declaration-merging", "module-augmentation", "express", "middleware"],
+  "prerequisites": ["ts-002-discriminated-union"],
+  "concepts": ["declaration merging", "module augmentation", "interface merging", "type compatibility"],
+  "files": {
+    "buggy": ["src/express-ext.ts"],
+    "solution": ["solution/express-ext.ts"],
+    "test": ["src/__tests__/express-ext.test.ts"],
+    "readOnly": []
+  }
+}

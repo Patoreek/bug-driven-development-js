@@ -1,0 +1,16 @@
+{
+  "id": "ts-002-discriminated-union",
+  "title": "Discriminated Union Notifications",
+  "category": "typescript",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["typescript", "discriminated-unions", "exhaustive-checking", "type-narrowing"],
+  "prerequisites": ["ts-001-unsafe-any-cast"],
+  "concepts": ["discriminated unions", "exhaustive switch", "never type", "type narrowing"],
+  "files": {
+    "buggy": ["src/notifications.ts"],
+    "solution": ["solution/notifications.ts"],
+    "test": ["src/__tests__/notifications.test.ts"],
+    "readOnly": []
+  }
+}

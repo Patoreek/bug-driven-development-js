@@ -1,8 +1,10 @@
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 import { glob } from "glob";
 
-const ROOT = path.resolve(import.meta.dirname, "..");
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, "..");
 export const EXERCISES_DIR = path.join(ROOT, "exercises");
 export const SANDBOX_DIR = path.join(ROOT, "sandbox");
 export const META_FILE = path.join(SANDBOX_DIR, ".exercise-meta.json");

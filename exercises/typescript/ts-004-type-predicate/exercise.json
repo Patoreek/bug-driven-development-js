@@ -1,0 +1,16 @@
+{
+  "id": "ts-004-type-predicate",
+  "title": "Type Predicate Filters",
+  "category": "typescript",
+  "difficulty": 3,
+  "estimatedMinutes": 20,
+  "tags": ["typescript", "type-predicates", "type-guards", "narrowing", "filter"],
+  "prerequisites": ["ts-001-unsafe-any-cast"],
+  "concepts": ["type predicates", "user-defined type guards", "type narrowing with filter", "NonNullable"],
+  "files": {
+    "buggy": ["src/filters.ts"],
+    "solution": ["solution/filters.ts"],
+    "test": ["src/__tests__/filters.test.ts"],
+    "readOnly": []
+  }
+}

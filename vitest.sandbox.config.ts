@@ -12,7 +12,7 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     globals: true,
-    setupFiles: ["./shared/test-utils/setup.ts"],
+    setupFiles: [path.resolve(__dirname, "shared/test-utils/setup.ts")],
     root: "./sandbox",
     include: ["**/*.test.{ts,tsx}"],
   },

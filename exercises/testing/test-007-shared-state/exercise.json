@@ -1,0 +1,16 @@
+{
+  "id": "test-007-shared-state",
+  "title": "Fix the Test Order Dependency",
+  "category": "testing",
+  "difficulty": 3,
+  "tags": ["testing", "vitest", "test-isolation", "shared-state"],
+  "concepts": ["shared mutable state", "test isolation", "beforeEach setup"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/ShoppingCart.test.ts"],
+    "testFiles": [],
+    "solutionFiles": ["solution/ShoppingCart.test.ts"]
+  }
+}

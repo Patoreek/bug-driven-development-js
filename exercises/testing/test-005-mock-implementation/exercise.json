@@ -1,0 +1,16 @@
+{
+  "id": "test-005-mock-implementation",
+  "title": "Fix the Over-Mocked Test",
+  "category": "testing",
+  "difficulty": 3,
+  "tags": ["testing", "vitest", "mocking", "test-design"],
+  "concepts": ["over-mocking", "testing behavior vs mocks", "mock boundaries"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/PricingCalculator.test.ts"],
+    "testFiles": [],
+    "solutionFiles": ["solution/PricingCalculator.test.ts"]
+  }
+}
