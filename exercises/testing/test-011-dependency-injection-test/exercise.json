@@ -1,0 +1,16 @@
+{
+  "id": "test-011-dependency-injection-test",
+  "title": "Fix the Dependency Injection Tests",
+  "category": "testing",
+  "difficulty": 4,
+  "tags": ["testing", "vitest", "dependency-injection", "mocking", "unit-testing"],
+  "concepts": ["dependency injection", "constructor injection", "mock objects", "test isolation"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/OrderService.test.ts"],
+    "testFiles": [],
+    "solutionFiles": ["solution/OrderService.test.ts"]
+  }
+}

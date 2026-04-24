@@ -22,6 +22,7 @@ async function main() {
     fullstack: "Fullstack",
     typescript: "TypeScript",
     testing: "Testing (Unit / Integration)",
+    javascript: "JavaScript (Core Language)",
   };
 
   for (const [cat, exs] of categories) {

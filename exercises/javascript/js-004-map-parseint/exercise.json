@@ -1,0 +1,16 @@
+{
+  "id": "js-004-map-parseint",
+  "title": "The map(parseInt) Puzzle",
+  "category": "javascript",
+  "difficulty": 2,
+  "tags": ["javascript", "arrays", "map", "parseInt", "radix", "callback-arguments"],
+  "concepts": ["Array.map callback arguments", "parseInt radix parameter", "implicit argument passing"],
+  "estimatedMinutes": 10,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

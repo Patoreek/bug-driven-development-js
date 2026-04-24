@@ -1,0 +1,16 @@
+{
+  "id": "js-010-promise-all-error",
+  "title": "Promise.all Loses Everything on One Failure",
+  "category": "javascript",
+  "difficulty": 3,
+  "tags": ["javascript", "promises", "async", "error-handling", "Promise.allSettled"],
+  "concepts": ["Promise.all", "Promise.allSettled", "error handling", "partial results"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

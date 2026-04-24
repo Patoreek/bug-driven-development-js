@@ -1,0 +1,16 @@
+{
+  "id": "js-012-deep-clone-pitfall",
+  "title": "Shallow Clone Surprise",
+  "category": "javascript",
+  "difficulty": 3,
+  "tags": ["javascript", "objects", "cloning", "references", "structuredClone"],
+  "concepts": ["shallow vs deep copy", "reference types", "structuredClone", "spread operator"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

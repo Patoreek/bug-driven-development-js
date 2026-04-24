@@ -1,0 +1,16 @@
+{
+  "id": "fe-022-use-sync-external-store",
+  "title": "External Store Tearing with useEffect",
+  "category": "frontend",
+  "difficulty": 4,
+  "tags": ["react", "useSyncExternalStore", "external-store", "tearing", "concurrent"],
+  "concepts": ["useSyncExternalStore", "store tearing", "external state synchronization", "snapshot consistency"],
+  "estimatedMinutes": 30,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/ThemeStore.ts", "src/ThemeDisplay.tsx"],
+    "testFiles": ["src/__tests__/ThemeDisplay.test.tsx"],
+    "solutionFiles": ["solution/ThemeStore.ts", "solution/ThemeDisplay.tsx"]
+  }
+}

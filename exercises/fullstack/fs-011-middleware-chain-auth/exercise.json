@@ -1,0 +1,16 @@
+{
+  "id": "fs-011-middleware-chain-auth",
+  "title": "Middleware Chain Auth: Token Refresh & Static Asset Filtering",
+  "category": "fullstack",
+  "difficulty": 4,
+  "estimatedMinutes": 30,
+  "tags": ["next.js", "middleware", "auth", "token-refresh", "matcher"],
+  "prerequisites": [],
+  "concepts": ["Next.js middleware", "JWT token refresh", "middleware matcher config", "request/response cookies"],
+  "files": {
+    "buggy": ["src/middleware.ts", "src/auth.ts"],
+    "solution": ["solution/middleware.ts", "solution/auth.ts"],
+    "test": ["src/__tests__/middleware.test.ts"],
+    "readOnly": []
+  }
+}

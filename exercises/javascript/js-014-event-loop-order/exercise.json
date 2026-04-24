@@ -1,0 +1,16 @@
+{
+  "id": "js-014-event-loop-order",
+  "title": "Event Loop Execution Order",
+  "category": "javascript",
+  "difficulty": 4,
+  "tags": ["javascript", "event-loop", "microtasks", "macrotasks", "promises", "async"],
+  "concepts": ["event loop", "microtasks", "macrotasks", "Promise", "queueMicrotask", "setTimeout"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

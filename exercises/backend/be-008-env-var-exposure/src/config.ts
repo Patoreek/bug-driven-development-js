@@ -24,7 +24,7 @@ const env: Record<string, string> = {
   NODE_ENV: "production",
   DB_HOST: "db.internal.example.com",
   DB_PASSWORD: "s3cret-p@ssw0rd!",
-  API_KEY: "sk_live_abc123xyz789",
+  API_KEY: "tok_test_abc123xyz789",
   JWT_SECRET: "my-jwt-signing-secret",
   REDIS_URL: "redis://cache.internal:6379",
   LOG_LEVEL: "info",

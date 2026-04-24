@@ -1,0 +1,16 @@
+{
+  "id": "fe-025-suspense-error-reset",
+  "title": "Suspense + Error Boundary: The Stuck Error",
+  "category": "frontend",
+  "difficulty": 5,
+  "tags": ["react", "suspense", "error-boundary", "data-fetching", "retry"],
+  "concepts": ["error boundaries", "Suspense", "error recovery", "cache invalidation", "key prop reset pattern"],
+  "estimatedMinutes": 35,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/DataLoader.tsx"],
+    "testFiles": ["src/__tests__/DataLoader.test.tsx"],
+    "solutionFiles": ["solution/DataLoader.tsx"]
+  }
+}

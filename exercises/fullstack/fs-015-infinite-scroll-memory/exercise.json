@@ -1,0 +1,16 @@
+{
+  "id": "fs-015-infinite-scroll-memory",
+  "title": "Infinite Scroll Memory Leak: Unbounded State Accumulation",
+  "category": "fullstack",
+  "difficulty": 4,
+  "estimatedMinutes": 30,
+  "tags": ["react", "performance", "memory", "infinite-scroll", "virtualization"],
+  "prerequisites": [],
+  "concepts": ["sliding window data management", "memory optimization", "intersection observer", "state windowing", "pagination"],
+  "files": {
+    "buggy": ["src/useInfiniteScroll.ts", "src/feedStore.ts"],
+    "solution": ["solution/useInfiniteScroll.ts", "solution/feedStore.ts"],
+    "test": ["src/__tests__/feedStore.test.ts"],
+    "readOnly": []
+  }
+}

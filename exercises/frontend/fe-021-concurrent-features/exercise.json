@@ -1,0 +1,16 @@
+{
+  "id": "fe-021-concurrent-features",
+  "title": "Concurrent Features: Misplaced Transitions",
+  "category": "frontend",
+  "difficulty": 4,
+  "tags": ["react", "concurrent", "startTransition", "useTransition", "performance"],
+  "concepts": ["React concurrent features", "startTransition", "urgent vs transition updates", "input responsiveness"],
+  "estimatedMinutes": 30,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/SearchPage.tsx"],
+    "testFiles": ["src/__tests__/SearchPage.test.tsx"],
+    "solutionFiles": ["solution/SearchPage.tsx"]
+  }
+}

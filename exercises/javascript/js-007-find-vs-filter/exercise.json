@@ -1,0 +1,16 @@
+{
+  "id": "js-007-find-vs-filter",
+  "title": "find() vs filter()[0]",
+  "category": "javascript",
+  "difficulty": 2,
+  "tags": ["javascript", "arrays", "find", "filter", "some", "performance"],
+  "concepts": ["Array.find", "Array.some", "short-circuit evaluation", "semantic correctness"],
+  "estimatedMinutes": 10,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

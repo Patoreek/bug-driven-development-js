@@ -1,0 +1,16 @@
+{
+  "id": "fs-014-rsc-serialization",
+  "title": "RSC Serialization: Non-Serializable Props Crossing the Server-Client Boundary",
+  "category": "fullstack",
+  "difficulty": 5,
+  "estimatedMinutes": 35,
+  "tags": ["next.js", "rsc", "serialization", "server-components", "client-components"],
+  "prerequisites": [],
+  "concepts": ["RSC payload serialization", "Date vs ISO string", "Map/Set serialization", "function serialization boundary", "JSON-safe props"],
+  "files": {
+    "buggy": ["src/serverData.ts", "src/serialize.ts"],
+    "solution": ["solution/serverData.ts", "solution/serialize.ts"],
+    "test": ["src/__tests__/serialize.test.ts"],
+    "readOnly": []
+  }
+}

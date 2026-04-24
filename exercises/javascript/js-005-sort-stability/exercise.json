@@ -1,0 +1,16 @@
+{
+  "id": "js-005-sort-stability",
+  "title": "Multi-Key Sort Order",
+  "category": "javascript",
+  "difficulty": 3,
+  "tags": ["javascript", "arrays", "sort", "multi-key", "comparator", "stable-sort"],
+  "concepts": ["multi-key sorting", "comparator composition", "sort stability"],
+  "estimatedMinutes": 15,
+  "prerequisites": ["js-002-sort-numeric"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "js-003-reduce-initial-value",
+  "title": "The Missing Reduce Initial Value",
+  "category": "javascript",
+  "difficulty": 2,
+  "tags": ["javascript", "arrays", "reduce", "initial-value", "accumulator"],
+  "concepts": ["Array.reduce", "initial value", "accumulator type"],
+  "estimatedMinutes": 10,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

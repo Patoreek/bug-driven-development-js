@@ -1,0 +1,16 @@
+{
+  "id": "be-020-prototype-pollution",
+  "title": "Prototype Pollution: Dangerous Deep Merge",
+  "category": "backend",
+  "difficulty": 5,
+  "tags": ["security", "prototype-pollution", "deep-merge", "object-prototype", "injection"],
+  "concepts": ["prototype pollution", "Object.prototype", "__proto__", "constructor.prototype", "safe object merging"],
+  "estimatedMinutes": 30,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/merge.ts"],
+    "testFiles": ["src/__tests__/merge.test.ts"],
+    "solutionFiles": ["solution/merge.ts"]
+  }
+}

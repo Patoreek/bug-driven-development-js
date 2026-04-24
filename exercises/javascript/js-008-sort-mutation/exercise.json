@@ -1,0 +1,16 @@
+{
+  "id": "js-008-sort-mutation",
+  "title": "The Sort Mutation Surprise",
+  "category": "javascript",
+  "difficulty": 2,
+  "tags": ["javascript", "arrays", "sort", "mutation", "immutability", "toSorted"],
+  "concepts": ["Array.sort mutation", "immutability", "defensive copying", "Array.toSorted"],
+  "estimatedMinutes": 10,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

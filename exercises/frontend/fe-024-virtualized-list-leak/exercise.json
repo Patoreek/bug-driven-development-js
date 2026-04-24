@@ -1,0 +1,16 @@
+{
+  "id": "fe-024-virtualized-list-leak",
+  "title": "Virtualized List: Memory Leaks and Layout Thrashing",
+  "category": "frontend",
+  "difficulty": 5,
+  "tags": ["react", "virtualization", "memory-leak", "performance", "dom", "passive-events"],
+  "concepts": ["event listener cleanup", "passive event listeners", "layout thrashing", "virtualized rendering", "memory management"],
+  "estimatedMinutes": 35,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/VirtualList.tsx"],
+    "testFiles": ["src/__tests__/VirtualList.test.tsx"],
+    "solutionFiles": ["solution/VirtualList.tsx"]
+  }
+}

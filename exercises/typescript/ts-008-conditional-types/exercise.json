@@ -1,0 +1,16 @@
+{
+  "id": "ts-008-conditional-types",
+  "title": "Conditional Types: Distributive vs Non-Distributive",
+  "category": "typescript",
+  "difficulty": 4,
+  "estimatedMinutes": 25,
+  "tags": ["typescript", "conditional-types", "distributive", "generics", "utility-types"],
+  "prerequisites": ["ts-003-generic-constraints"],
+  "concepts": ["distributive conditional types", "naked type parameters", "type-level filtering", "Exclude/Extract utility types"],
+  "files": {
+    "buggy": ["src/conditionalTypes.ts"],
+    "solution": ["solution/conditionalTypes.ts"],
+    "test": ["src/__tests__/conditionalTypes.test.ts"],
+    "readOnly": []
+  }
+}

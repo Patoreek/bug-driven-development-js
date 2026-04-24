@@ -1,0 +1,16 @@
+{
+  "id": "be-019-timing-attack",
+  "title": "Timing Attack: Insecure Token Comparison",
+  "category": "backend",
+  "difficulty": 4,
+  "tags": ["security", "timing-attack", "crypto", "authentication", "constant-time"],
+  "concepts": ["timing attacks", "constant-time comparison", "crypto.timingSafeEqual", "side-channel attacks"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/auth.ts"],
+    "testFiles": ["src/__tests__/auth.test.ts"],
+    "solutionFiles": ["solution/auth.ts"]
+  }
+}

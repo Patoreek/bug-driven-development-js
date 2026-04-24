@@ -1,0 +1,16 @@
+{
+  "id": "test-014-concurrent-test",
+  "title": "Fix the Flaky Rate Limiter Tests",
+  "category": "testing",
+  "difficulty": 5,
+  "tags": ["testing", "vitest", "fake-timers", "async", "flaky-tests", "shared-state"],
+  "concepts": ["fake timers", "test isolation", "deterministic async testing", "shared state"],
+  "estimatedMinutes": 30,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/RateLimiter.test.ts"],
+    "testFiles": [],
+    "solutionFiles": ["solution/RateLimiter.test.ts"]
+  }
+}

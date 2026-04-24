@@ -6,7 +6,7 @@ A hands-on exercise platform for mastering TypeScript, React, Next.js, and Node.
 
 ```bash
 npm install
-npm run exercise:list              # Browse all 65 exercises
+npm run exercise:list              # Browse all 110 exercises
 npm run exercise -- fe-001         # Start an exercise (supports fuzzy match)
 npm run test:exercise              # Run tests against your code
 npm run exercise:hint              # Get a progressive hint
@@ -27,11 +27,12 @@ npm run exercise:check             # Check your solution
 
 | Category | Prefix | Count | Topics |
 |----------|--------|-------|--------|
-| Frontend | `fe-` | 20 | React hooks, re-renders, performance, Redux, a11y, patterns |
-| Backend | `be-` | 18 | Security, middleware, API design, caching, auth, databases |
-| Fullstack | `fs-` | 10 | SSR, hydration, server components, streaming, data fetching |
-| TypeScript | `ts-` | 7 | Type safety, generics, discriminated unions, type guards |
-| Testing | `test-` | 10 | Unit tests, mocking, async testing, test isolation, coverage |
+| Frontend | `fe-` | 25 | React hooks, re-renders, performance, Redux, a11y, concurrent features |
+| Backend | `be-` | 23 | Security, middleware, API design, caching, auth, streams, crypto |
+| Fullstack | `fs-` | 15 | SSR, hydration, server components, streaming, RSC serialization |
+| TypeScript | `ts-` | 12 | Type safety, generics, conditional types, branded types, builders |
+| Testing | `test-` | 15 | Unit tests, mocking, async testing, hooks, parameterized, snapshots |
+| JavaScript | `js-` | 20 | Array methods, sorting, closures, promises, generators, proxies |
 
 ## Difficulty Scale
 
@@ -47,11 +48,12 @@ npm run exercise:check             # Check your solution
 
 ```
 exercises/           # Exercise templates (don't edit these)
-  frontend/          # fe-001 through fe-020
-  backend/           # be-001 through be-018
-  fullstack/         # fs-001 through fs-010
-  typescript/        # ts-001 through ts-007
-  testing/           # test-001 through test-010
+  frontend/          # fe-001 through fe-025
+  backend/           # be-001 through be-023
+  fullstack/         # fs-001 through fs-015
+  typescript/        # ts-001 through ts-012
+  testing/           # test-001 through test-015
+  javascript/        # js-001 through js-020
 sandbox/             # Your working directory (exercises copied here)
 scripts/             # CLI tooling
 shared/test-utils/   # Shared testing infrastructure

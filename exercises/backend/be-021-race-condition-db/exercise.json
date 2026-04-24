@@ -1,0 +1,16 @@
+{
+  "id": "be-021-race-condition-db",
+  "title": "Race Condition: Double-Spend Read-Then-Write",
+  "category": "backend",
+  "difficulty": 4,
+  "tags": ["database", "race-condition", "concurrency", "optimistic-locking", "transactions"],
+  "concepts": ["read-then-write race condition", "optimistic locking", "version column", "double-spending", "atomic updates"],
+  "estimatedMinutes": 30,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/wallet.ts"],
+    "testFiles": ["src/__tests__/wallet.test.ts"],
+    "solutionFiles": ["solution/wallet.ts"]
+  }
+}

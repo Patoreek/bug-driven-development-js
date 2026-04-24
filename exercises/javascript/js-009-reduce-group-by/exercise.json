@@ -1,0 +1,16 @@
+{
+  "id": "js-009-reduce-group-by",
+  "title": "Reduce groupBy Gone Wrong",
+  "category": "javascript",
+  "difficulty": 3,
+  "tags": ["javascript", "reduce", "groupBy", "accumulator", "objects"],
+  "concepts": ["Array.reduce", "accumulator mutation", "Object.groupBy"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

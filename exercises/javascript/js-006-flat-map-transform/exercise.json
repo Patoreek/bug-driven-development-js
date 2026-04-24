@@ -1,0 +1,16 @@
+{
+  "id": "js-006-flat-map-transform",
+  "title": "flatMap vs map().flat()",
+  "category": "javascript",
+  "difficulty": 2,
+  "tags": ["javascript", "arrays", "flatMap", "map", "flat", "data-transformation"],
+  "concepts": ["Array.flatMap", "Array.flat", "data flattening", "Set for uniqueness"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

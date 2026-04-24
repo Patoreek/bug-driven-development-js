@@ -1,0 +1,16 @@
+{
+  "id": "fs-012-server-component-data-leak",
+  "title": "Server Component Data Leak: Cross-User Cache Contamination",
+  "category": "fullstack",
+  "difficulty": 5,
+  "estimatedMinutes": 35,
+  "tags": ["next.js", "server-components", "caching", "security", "data-leak"],
+  "prerequisites": [],
+  "concepts": ["Next.js fetch caching", "cache: no-store", "per-user cache keys", "dynamic rendering", "cookies/headers for opt-out"],
+  "files": {
+    "buggy": ["src/UserDashboard.ts", "src/api.ts"],
+    "solution": ["solution/UserDashboard.ts", "solution/api.ts"],
+    "test": ["src/__tests__/UserDashboard.test.ts"],
+    "readOnly": []
+  }
+}

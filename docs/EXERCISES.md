@@ -1,6 +1,6 @@
 # Exercise Catalog
 
-## Frontend (20 exercises)
+## Frontend (25 exercises)
 
 | ID | Title | Difficulty | Time | Concepts |
 |----|-------|-----------|------|----------|
@@ -24,8 +24,13 @@
 | `fe-018-derived-state-antipattern` | Remove the Derived State Anti-pattern | ★★★☆☆ | 20m | Single source of truth |
 | `fe-019-portal-event-bubbling` | Fix the Portal Event Propagation | ★★★☆☆ | 20m | React Portals, event bubbling |
 | `fe-020-compound-component` | Refactor to Compound Components | ★★★★☆ | 35m | Compound component pattern, context |
+| `fe-021-concurrent-features` | Fix the Concurrent Features Misuse | ★★★★☆ | 30m | startTransition, concurrent rendering |
+| `fe-022-use-sync-external-store` | Fix the External Store Tearing | ★★★★☆ | 30m | useSyncExternalStore, concurrent tearing |
+| `fe-023-render-prop-closure` | Fix the Render Prop Closure | ★★★★☆ | 25m | Render props, memoization, stale closures |
+| `fe-024-virtualized-list-leak` | Fix the Virtualized List Leak | ★★★★★ | 35m | Virtualization, memory leaks, passive listeners |
+| `fe-025-suspense-error-reset` | Fix the Suspense Error Reset | ★★★★★ | 35m | Error boundaries, Suspense, retry patterns |
 
-## Backend (18 exercises)
+## Backend (23 exercises)
 
 | ID | Title | Difficulty | Time | Concepts |
 |----|-------|-----------|------|----------|
@@ -47,8 +52,13 @@
 | `be-016-rest-api-design` | Fix the RESTful API Design | ★★☆☆☆ | 15m | REST conventions, HTTP methods |
 | `be-017-graceful-shutdown` | Handle Server Shutdown Gracefully | ★★★☆☆ | 25m | Signal handling, connection draining |
 | `be-018-transaction-rollback` | Fix the Partial Database Write | ★★★★☆ | 30m | Transactions, rollback |
+| `be-019-timing-attack` | Fix the Timing Attack | ★★★★☆ | 25m | Constant-time comparison, crypto |
+| `be-020-prototype-pollution` | Fix the Prototype Pollution | ★★★★★ | 30m | Prototype chain, deep merge safety |
+| `be-021-race-condition-db` | Fix the Database Race Condition | ★★★★☆ | 30m | Optimistic locking, double-spending |
+| `be-022-stream-backpressure` | Fix the Stream Backpressure | ★★★★★ | 35m | Streams, backpressure, OOM prevention |
+| `be-023-regex-dos` | Fix the Regex DoS | ★★★★☆ | 25m | ReDoS, catastrophic backtracking |
 
-## Fullstack (10 exercises)
+## Fullstack (15 exercises)
 
 | ID | Title | Difficulty | Time | Concepts |
 |----|-------|-----------|------|----------|
@@ -62,8 +72,13 @@
 | `fs-008-api-overfetching` | Stop Overfetching in the API Layer | ★★★☆☆ | 20m | Field selection, DTOs |
 | `fs-009-swr-cache-sync` | Fix the SWR Cache Inconsistency | ★★★★☆ | 25m | SWR mutate, cache keys |
 | `fs-010-e2e-test-flakiness` | Fix the Flaky End-to-End Test | ★★★★☆ | 25m | Test determinism, wait strategies |
+| `fs-011-middleware-chain-auth` | Fix the Middleware Auth Chain | ★★★★☆ | 30m | Token refresh, middleware matchers |
+| `fs-012-server-component-data-leak` | Fix the Server Component Data Leak | ★★★★★ | 35m | Per-user caching, cache tags |
+| `fs-013-form-double-submit` | Fix the Form Double Submit | ★★★★☆ | 25m | useFormStatus, idempotency |
+| `fs-014-rsc-serialization` | Fix the RSC Serialization | ★★★★★ | 35m | Server/client serialization boundary |
+| `fs-015-infinite-scroll-memory` | Fix the Infinite Scroll Memory | ★★★★☆ | 30m | Data windowing, memory management |
 
-## TypeScript (7 exercises)
+## TypeScript (12 exercises)
 
 | ID | Title | Difficulty | Time | Concepts |
 |----|-------|-----------|------|----------|
@@ -74,8 +89,13 @@
 | `ts-005-mapped-types` | Fix the API Response Types | ★★★★☆ | 25m | Mapped types, template literals |
 | `ts-006-module-augmentation` | Extend the Third-Party Types | ★★★★☆ | 25m | Declaration merging |
 | `ts-007-type-variance` | Fix the Type Variance Bug | ★★★★★ | 30m | Covariance, contravariance |
+| `ts-008-conditional-types` | Fix the Conditional Type Distribution | ★★★★☆ | 25m | Distributive conditional types |
+| `ts-009-template-literal-types` | Fix the Route Type Safety | ★★★★☆ | 25m | Template literal types, route params |
+| `ts-010-infer-keyword` | Fix the Recursive Type Unwrap | ★★★★★ | 30m | infer, recursive conditional types |
+| `ts-011-branded-types` | Add the Branded Types | ★★★★☆ | 25m | Branded types, nominal typing |
+| `ts-012-builder-pattern-types` | Fix the Builder Pattern Types | ★★★★★ | 30m | Generic accumulator, type-safe builders |
 
-## Testing (10 exercises)
+## Testing (15 exercises)
 
 | ID | Title | Difficulty | Time | Concepts |
 |----|-------|-----------|------|----------|
@@ -89,3 +109,33 @@
 | `test-008-timer-test` | Fix the Timer Test | ★★★☆☆ | 20m | Fake timers, vi.useFakeTimers |
 | `test-009-error-path-test` | Test the Error Paths | ★★★★☆ | 25m | Error boundary testing, rejection testing |
 | `test-010-integration-boundary` | Fix the Integration Test Boundary | ★★★★☆ | 30m | Integration vs unit, proper test scope |
+| `test-011-dependency-injection-test` | Fix the Dependency Injection Test | ★★★★☆ | 25m | DI, mock injection, test isolation |
+| `test-012-react-hook-test` | Fix the React Hook Test | ★★★★☆ | 25m | renderHook, testing hooks directly |
+| `test-013-parameterized-test` | Fix the Parameterized Tests | ★★★★☆ | 20m | it.each, data-driven tests |
+| `test-014-concurrent-test` | Fix the Concurrent Test | ★★★★★ | 30m | Fake timers, async determinism |
+| `test-015-snapshot-regression` | Fix the Snapshot Regression | ★★★★★ | 30m | Snapshot corruption, behavioral assertions |
+
+## JavaScript (20 exercises)
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `js-001-filter-boolean-trap` | Fix the Filter Boolean Trap | ★★☆☆☆ | 10m | Array.filter, falsy values, Boolean coercion |
+| `js-002-sort-numeric` | Fix the Numeric Sort | ★☆☆☆☆ | 10m | Array.sort, lexicographic vs numeric |
+| `js-003-reduce-initial-value` | Fix the Missing Reduce Accumulator | ★★☆☆☆ | 10m | Array.reduce, initial value |
+| `js-004-map-parseint` | Fix the Map + parseInt Bug | ★★☆☆☆ | 10m | Array.map, parseInt radix parameter |
+| `js-005-sort-stability` | Fix the Unstable Sort | ★★★☆☆ | 15m | Sort stability, multi-key sorting |
+| `js-006-flat-map-transform` | Flatten and Transform Correctly | ★★☆☆☆ | 15m | flatMap, nested data |
+| `js-007-find-vs-filter` | Use the Right Array Method | ★★☆☆☆ | 10m | find vs filter, early termination |
+| `js-008-sort-mutation` | Fix the Accidental Sort Mutation | ★★☆☆☆ | 10m | Sort mutates in-place, toSorted |
+| `js-009-reduce-group-by` | Fix the groupBy Reduce | ★★★☆☆ | 15m | reduce for grouping, Object.groupBy |
+| `js-010-promise-all-error` | Fix the Promise.all Error Handling | ★★★☆☆ | 15m | Promise.all vs allSettled, error propagation |
+| `js-011-closure-loop-var` | Fix the Closure in a Loop | ★★☆☆☆ | 10m | Closures, let vs var, IIFE |
+| `js-012-deep-clone-pitfall` | Fix the Shallow Copy Bug | ★★★☆☆ | 15m | Spread operator, structuredClone, deep copy |
+| `js-013-debounce-implementation` | Fix the Debounce Function | ★★★☆☆ | 20m | Closures, setTimeout, debounce pattern |
+| `js-014-event-loop-order` | Fix the Execution Order | ★★★★☆ | 20m | Event loop, microtasks, macrotasks |
+| `js-015-proxy-validation` | Fix the Proxy Validator | ★★★★☆ | 25m | Proxy, Reflect, property traps |
+| `js-016-weakmap-memory` | Fix the WeakMap Memory Leak | ★★★★☆ | 25m | WeakMap, garbage collection, caching |
+| `js-017-iterator-protocol` | Fix the Iterator Protocol | ★★★★☆ | 25m | Symbol.iterator, iteration protocol |
+| `js-018-generator-pagination` | Fix the Generator Pagination | ★★★★☆ | 25m | Async generators, lazy evaluation |
+| `js-019-structured-clone-limitations` | Fix the structuredClone Limits | ★★★★☆ | 20m | structuredClone, non-cloneable types |
+| `js-020-abortcontroller-cleanup` | Fix the AbortController Cleanup | ★★★★★ | 30m | AbortController, signal, async cancellation |

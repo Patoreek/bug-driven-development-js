@@ -1,0 +1,16 @@
+{
+  "id": "test-012-react-hook-test",
+  "title": "Fix the React Hook Tests",
+  "category": "testing",
+  "difficulty": 4,
+  "tags": ["testing", "vitest", "react-testing-library", "hooks", "renderHook"],
+  "concepts": ["renderHook", "custom hooks", "hook testing", "act warnings"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/useLocalStorage.test.tsx"],
+    "testFiles": [],
+    "solutionFiles": ["solution/useLocalStorage.test.tsx"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "fe-023-render-prop-closure",
+  "title": "Render Prop Closure Trap",
+  "category": "frontend",
+  "difficulty": 4,
+  "tags": ["react", "render-props", "closures", "memoization", "performance"],
+  "concepts": ["render prop pattern", "closure stale state", "memoization invalidation", "component composition"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "npm run test:exercise",
+  "files": {
+    "buggy": ["src/MouseTracker.tsx"],
+    "testFiles": ["src/__tests__/MouseTracker.test.tsx"],
+    "solutionFiles": ["solution/MouseTracker.tsx"]
+  }
+}

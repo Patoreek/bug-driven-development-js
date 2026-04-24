@@ -1,0 +1,16 @@
+{
+  "id": "fs-013-form-double-submit",
+  "title": "Form Double Submit: Missing Pending State & Idempotency",
+  "category": "fullstack",
+  "difficulty": 4,
+  "estimatedMinutes": 25,
+  "tags": ["next.js", "forms", "useFormStatus", "useActionState", "idempotency"],
+  "prerequisites": [],
+  "concepts": ["useFormStatus", "useActionState", "server actions", "idempotency keys", "optimistic UI"],
+  "files": {
+    "buggy": ["src/OrderForm.tsx", "src/submitOrder.ts"],
+    "solution": ["solution/OrderForm.tsx", "solution/submitOrder.ts"],
+    "test": ["src/__tests__/OrderForm.test.tsx"],
+    "readOnly": []
+  }
+}

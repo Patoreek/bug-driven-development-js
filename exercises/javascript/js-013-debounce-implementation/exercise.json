@@ -1,0 +1,16 @@
+{
+  "id": "js-013-debounce-implementation",
+  "title": "Broken Debounce and Throttle",
+  "category": "javascript",
+  "difficulty": 3,
+  "tags": ["javascript", "debounce", "throttle", "timers", "closures"],
+  "concepts": ["debounce", "throttle", "clearTimeout", "setTimeout", "closures"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

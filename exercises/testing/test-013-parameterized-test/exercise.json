@@ -1,0 +1,16 @@
+{
+  "id": "test-013-parameterized-test",
+  "title": "Fix the Copy-Paste Test Suite",
+  "category": "testing",
+  "difficulty": 4,
+  "tags": ["testing", "vitest", "parameterized-tests", "it-each", "DRY"],
+  "concepts": ["it.each", "describe.each", "test data tables", "parameterized testing"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/validatePassword.test.ts"],
+    "testFiles": [],
+    "solutionFiles": ["solution/validatePassword.test.ts"]
+  }
+}

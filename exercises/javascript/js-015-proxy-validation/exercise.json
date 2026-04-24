@@ -1,0 +1,16 @@
+{
+  "id": "js-015-proxy-validation",
+  "title": "Proxy Validation Pitfalls",
+  "category": "javascript",
+  "difficulty": 4,
+  "tags": ["javascript", "proxy", "reflect", "validation", "metaprogramming"],
+  "concepts": ["Proxy", "Reflect", "traps", "property validation", "metaprogramming"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}
