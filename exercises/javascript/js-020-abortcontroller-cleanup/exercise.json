@@ -1,0 +1,16 @@
+{
+  "id": "js-020-abortcontroller-cleanup",
+  "title": "AbortController Cleanup",
+  "category": "javascript",
+  "difficulty": 5,
+  "tags": ["javascript", "abortcontroller", "abort-signal", "async", "resource-cleanup"],
+  "concepts": ["AbortController", "AbortSignal", "fetch cancellation", "async cleanup", "event listener removal"],
+  "estimatedMinutes": 30,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "js-017-iterator-protocol",
+  "title": "Iterator Protocol",
+  "category": "javascript",
+  "difficulty": 4,
+  "tags": ["javascript", "iterators", "symbol-iterator", "iteration-protocol", "for-of"],
+  "concepts": ["Symbol.iterator", "iterator protocol", "iterable protocol", "IteratorResult", "re-iterability"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

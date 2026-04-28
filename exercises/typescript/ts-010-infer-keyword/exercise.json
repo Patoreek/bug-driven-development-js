@@ -1,0 +1,16 @@
+{
+  "id": "ts-010-infer-keyword",
+  "title": "The infer Keyword: Type-Level Pattern Matching",
+  "category": "typescript",
+  "difficulty": 4,
+  "tags": ["typescript", "infer", "conditional-types", "type-extraction", "generics"],
+  "concepts": ["infer keyword", "type-level pattern matching", "recursive conditional types", "tuple manipulation", "constructor types"],
+  "estimatedMinutes": 25,
+  "prerequisites": ["ts-008-conditional-types"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/inferKeyword.ts"],
+    "testFiles": ["src/__tests__/inferKeyword.test.ts"],
+    "solutionFiles": ["solution/inferKeyword.ts"]
+  }
+}

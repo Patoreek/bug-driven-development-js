@@ -1,0 +1,16 @@
+{
+  "id": "js-019-structured-clone-limitations",
+  "title": "structuredClone Limitations",
+  "category": "javascript",
+  "difficulty": 4,
+  "tags": ["javascript", "structuredClone", "deep-copy", "serialization", "json"],
+  "concepts": ["structuredClone", "structured clone algorithm", "JSON serialization limits", "shallow vs deep copy", "non-cloneable types"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

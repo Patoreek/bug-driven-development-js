@@ -1,0 +1,16 @@
+{
+  "id": "lc-007-longest-substring",
+  "title": "Longest Substring Without Repeating Characters",
+  "category": "leetcode",
+  "difficulty": 3,
+  "tags": ["strings", "sliding-window", "hash-map", "two-pointers"],
+  "concepts": ["sliding window technique", "character tracking", "window shrinking"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

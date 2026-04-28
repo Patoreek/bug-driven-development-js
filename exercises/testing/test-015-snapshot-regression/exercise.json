@@ -1,0 +1,16 @@
+{
+  "id": "test-015-snapshot-regression",
+  "title": "Snapshot Regression: Tests That Hide Bugs",
+  "category": "testing",
+  "difficulty": 4,
+  "tags": ["testing", "vitest", "snapshots", "regression", "assertions"],
+  "concepts": ["snapshot testing pitfalls", "deterministic test data", "targeted assertions", "test maintainability"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/__tests__/UserCard.test.ts"],
+    "testFiles": [],
+    "solutionFiles": ["solution/UserCard.test.ts"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "be-022-stream-backpressure",
+  "title": "Stream Backpressure: Flooding a Slow Consumer",
+  "category": "backend",
+  "difficulty": 4,
+  "tags": ["streams", "backpressure", "node.js", "memory", "pipeline"],
+  "concepts": ["stream backpressure", "writable.write() return value", "drain event", "stream.pipeline", "highWaterMark"],
+  "estimatedMinutes": 30,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/fileProcessor.ts"],
+    "testFiles": ["src/__tests__/fileProcessor.test.ts"],
+    "solutionFiles": ["solution/fileProcessor.ts"]
+  }
+}

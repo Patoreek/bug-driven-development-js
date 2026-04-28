@@ -1,0 +1,16 @@
+{
+  "id": "lc-019-lru-cache",
+  "title": "LRU Cache",
+  "category": "leetcode",
+  "difficulty": 4,
+  "tags": ["design", "hash-map", "linked-list", "doubly-linked-list"],
+  "concepts": ["LRU eviction", "doubly linked list", "hash map + linked list combo", "O(1) design"],
+  "estimatedMinutes": 35,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

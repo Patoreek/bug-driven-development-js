@@ -1,0 +1,16 @@
+{
+  "id": "lc-011-merge-sorted-lists",
+  "title": "Merge Two Sorted Lists",
+  "category": "leetcode",
+  "difficulty": 2,
+  "tags": ["linked-list", "merge", "two-pointer"],
+  "concepts": ["linked list manipulation", "dummy head pointer", "in-place merge"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "lc-015-number-of-islands",
+  "title": "Number of Islands",
+  "category": "leetcode",
+  "difficulty": 3,
+  "tags": ["matrix", "dfs", "flood-fill", "graph"],
+  "concepts": ["flood fill", "DFS on grid", "visited marking", "connected components"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

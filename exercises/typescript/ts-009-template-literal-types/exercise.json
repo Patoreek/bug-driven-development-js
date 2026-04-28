@@ -1,0 +1,16 @@
+{
+  "id": "ts-009-template-literal-types",
+  "title": "Template Literal Types: String Manipulation at the Type Level",
+  "category": "typescript",
+  "difficulty": 4,
+  "tags": ["typescript", "template-literal-types", "string-manipulation", "mapped-types", "intrinsic-types"],
+  "concepts": ["template literal types", "Capitalize intrinsic type", "Lowercase intrinsic type", "recursive type aliases", "string pattern matching with infer"],
+  "estimatedMinutes": 25,
+  "prerequisites": ["ts-008-conditional-types"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/templateLiteralTypes.ts"],
+    "testFiles": ["src/__tests__/templateLiteralTypes.test.ts"],
+    "solutionFiles": ["solution/templateLiteralTypes.ts"]
+  }
+}

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Exercise platform where users fix buggy/suboptimal TypeScript + Next.js code. 110 exercises across frontend, backend, fullstack, typescript, testing, and javascript categories.
+Exercise platform where users fix buggy/suboptimal TypeScript + Next.js code. 130 exercises across frontend, backend, fullstack, typescript, testing, javascript, and leetcode categories.
 
 ## Commands
 
@@ -29,7 +29,7 @@ npm run test:verify                # Run tests against exercise templates
 ## Exercise Naming
 
 Format: `{category}-{NNN}-{slug}` (e.g., `fe-001-stale-closure-counter`)
-- `fe-` frontend, `be-` backend, `fs-` fullstack, `ts-` typescript, `test-` testing, `js-` javascript
+- `fe-` frontend, `be-` backend, `fs-` fullstack, `ts-` typescript, `test-` testing, `js-` javascript, `lc-` leetcode
 
 ## Generating New Exercises
 

@@ -1,0 +1,16 @@
+{
+  "id": "lc-001-two-sum",
+  "title": "Two Sum",
+  "category": "leetcode",
+  "difficulty": 2,
+  "tags": ["arrays", "hash-map", "two-sum"],
+  "concepts": ["hash map lookup", "complement pattern", "time-space tradeoff"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

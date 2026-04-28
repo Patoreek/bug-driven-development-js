@@ -1,0 +1,16 @@
+{
+  "id": "js-016-weakmap-memory",
+  "title": "WeakMap Memory Leak",
+  "category": "javascript",
+  "difficulty": 4,
+  "tags": ["javascript", "weakmap", "garbage-collection", "caching", "memory-leaks"],
+  "concepts": ["WeakMap", "garbage collection", "weak references", "memory management", "Map vs WeakMap"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

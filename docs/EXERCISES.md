@@ -139,3 +139,57 @@
 | `js-018-generator-pagination` | Fix the Generator Pagination | ★★★★☆ | 25m | Async generators, lazy evaluation |
 | `js-019-structured-clone-limitations` | Fix the structuredClone Limits | ★★★★☆ | 20m | structuredClone, non-cloneable types |
 | `js-020-abortcontroller-cleanup` | Fix the AbortController Cleanup | ★★★★★ | 30m | AbortController, signal, async cancellation |
+
+## LeetCode — Algorithms & Data Structures (20 exercises)
+
+Each exercise provides a brute-force or incorrect solution. Your task: optimize it to the expected time/space complexity.
+
+### Arrays & Hash Maps
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `lc-001-two-sum` | Two Sum | ★★☆☆☆ | 15m | Hash map lookup, O(n) vs O(n²) |
+| `lc-002-valid-anagram` | Valid Anagram | ★★☆☆☆ | 10m | Character frequency map |
+| `lc-003-merge-intervals` | Merge Intervals | ★★★☆☆ | 20m | Sorting, interval merging |
+| `lc-004-group-anagrams` | Group Anagrams | ★★★☆☆ | 20m | Hash map keying strategy |
+| `lc-005-product-except-self` | Product of Array Except Self | ★★★☆☆ | 25m | Prefix/suffix products, no division |
+
+### Strings & Sliding Window
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `lc-006-valid-parentheses` | Valid Parentheses | ★★☆☆☆ | 15m | Stack-based matching |
+| `lc-007-longest-substring` | Longest Substring Without Repeating | ★★★☆☆ | 25m | Sliding window, Set/Map |
+| `lc-008-min-window-substring` | Minimum Window Substring | ★★★★☆ | 30m | Sliding window, two pointers |
+
+### Linked Lists
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `lc-009-reverse-linked-list` | Reverse a Linked List | ★★☆☆☆ | 15m | Pointer manipulation, iterative vs recursive |
+| `lc-010-detect-cycle` | Detect Cycle in Linked List | ★★★☆☆ | 20m | Floyd's tortoise and hare |
+| `lc-011-merge-sorted-lists` | Merge Two Sorted Lists | ★★☆☆☆ | 15m | Pointer merging, dummy head |
+
+### Trees & Graphs
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `lc-012-max-depth-binary-tree` | Maximum Depth of Binary Tree | ★★☆☆☆ | 10m | DFS recursion, base cases |
+| `lc-013-level-order-traversal` | Binary Tree Level Order Traversal | ★★★☆☆ | 20m | BFS, queue-based traversal |
+| `lc-014-validate-bst` | Validate Binary Search Tree | ★★★☆☆ | 25m | In-order traversal, range checking |
+| `lc-015-number-of-islands` | Number of Islands | ★★★☆☆ | 25m | DFS/BFS flood fill, grid traversal |
+
+### Dynamic Programming
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `lc-016-climbing-stairs` | Climbing Stairs | ★★☆☆☆ | 15m | Memoization, bottom-up DP |
+| `lc-017-coin-change` | Coin Change | ★★★☆☆ | 25m | DP, BFS, optimal substructure |
+| `lc-018-longest-common-subseq` | Longest Common Subsequence | ★★★★☆ | 30m | 2D DP table, string comparison |
+
+### Advanced
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `lc-019-lru-cache` | LRU Cache | ★★★★☆ | 35m | Hash map + doubly linked list, O(1) ops |
+| `lc-020-top-k-frequent` | Top K Frequent Elements | ★★★☆☆ | 25m | Bucket sort, heap, frequency map |

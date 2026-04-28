@@ -1,0 +1,16 @@
+{
+  "id": "js-018-generator-pagination",
+  "title": "Generator Pagination",
+  "category": "javascript",
+  "difficulty": 4,
+  "tags": ["javascript", "async-generators", "pagination", "yield", "lazy-evaluation"],
+  "concepts": ["async generators", "yield vs yield*", "lazy pagination", "iterator cleanup", "async iteration"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/utils.ts"],
+    "testFiles": ["src/__tests__/utils.test.ts"],
+    "solutionFiles": ["solution/utils.ts"]
+  }
+}

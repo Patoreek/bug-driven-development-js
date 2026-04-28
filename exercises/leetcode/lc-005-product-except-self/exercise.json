@@ -1,0 +1,16 @@
+{
+  "id": "lc-005-product-except-self",
+  "title": "Product of Array Except Self",
+  "category": "leetcode",
+  "difficulty": 3,
+  "tags": ["arrays", "prefix-sum", "math"],
+  "concepts": ["prefix products", "suffix products", "avoiding division"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

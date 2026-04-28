@@ -1,0 +1,16 @@
+{
+  "id": "lc-013-level-order-traversal",
+  "title": "Binary Tree Level Order Traversal",
+  "category": "leetcode",
+  "difficulty": 3,
+  "tags": ["trees", "bfs", "queue", "level-order"],
+  "concepts": ["breadth-first search", "queue-based traversal", "level separation"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "lc-009-reverse-linked-list",
+  "title": "Reverse Linked List",
+  "category": "leetcode",
+  "difficulty": 2,
+  "tags": ["linked-list", "pointers", "in-place"],
+  "concepts": ["linked list reversal", "pointer manipulation", "in-place algorithms"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "be-023-regex-dos",
+  "title": "ReDoS: Catastrophic Backtracking in Validation",
+  "category": "backend",
+  "difficulty": 4,
+  "tags": ["regex", "security", "redos", "validation", "performance"],
+  "concepts": ["catastrophic backtracking", "ReDoS", "nested quantifiers", "regex performance", "input validation"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/validator.ts"],
+    "testFiles": ["src/__tests__/validator.test.ts"],
+    "solutionFiles": ["solution/validator.ts"]
+  }
+}

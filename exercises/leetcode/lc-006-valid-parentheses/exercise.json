@@ -1,0 +1,16 @@
+{
+  "id": "lc-006-valid-parentheses",
+  "title": "Valid Parentheses",
+  "category": "leetcode",
+  "difficulty": 2,
+  "tags": ["strings", "stack", "brackets"],
+  "concepts": ["stack data structure", "bracket matching", "LIFO principle"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

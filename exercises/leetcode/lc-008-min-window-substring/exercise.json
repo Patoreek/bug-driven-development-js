@@ -1,0 +1,16 @@
+{
+  "id": "lc-008-min-window-substring",
+  "title": "Minimum Window Substring",
+  "category": "leetcode",
+  "difficulty": 4,
+  "tags": ["strings", "sliding-window", "hash-map", "two-pointers"],
+  "concepts": ["sliding window", "frequency matching", "window contraction"],
+  "estimatedMinutes": 30,
+  "prerequisites": ["lc-007-longest-substring"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

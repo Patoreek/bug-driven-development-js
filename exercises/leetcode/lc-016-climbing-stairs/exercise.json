@@ -1,0 +1,16 @@
+{
+  "id": "lc-016-climbing-stairs",
+  "title": "Climbing Stairs",
+  "category": "leetcode",
+  "difficulty": 2,
+  "tags": ["dynamic-programming", "recursion", "memoization", "fibonacci"],
+  "concepts": ["overlapping subproblems", "memoization", "bottom-up DP", "space optimization"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

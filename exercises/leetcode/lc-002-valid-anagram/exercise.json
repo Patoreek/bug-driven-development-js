@@ -1,0 +1,16 @@
+{
+  "id": "lc-002-valid-anagram",
+  "title": "Valid Anagram",
+  "category": "leetcode",
+  "difficulty": 2,
+  "tags": ["strings", "hash-map", "sorting", "frequency-counting"],
+  "concepts": ["character frequency counting", "Map vs sorting", "early exit optimization"],
+  "estimatedMinutes": 10,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "lc-010-detect-cycle",
+  "title": "Linked List Cycle Detection",
+  "category": "leetcode",
+  "difficulty": 3,
+  "tags": ["linked-list", "two-pointers", "floyd-algorithm"],
+  "concepts": ["Floyd's cycle detection", "tortoise and hare", "O(1) space linked list traversal"],
+  "estimatedMinutes": 20,
+  "prerequisites": ["lc-009-reverse-linked-list"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

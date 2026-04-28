@@ -1,0 +1,16 @@
+{
+  "id": "lc-004-group-anagrams",
+  "title": "Group Anagrams",
+  "category": "leetcode",
+  "difficulty": 3,
+  "tags": ["strings", "hash-map", "sorting", "anagrams"],
+  "concepts": ["canonical form", "hash map grouping", "sorting as normalization"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

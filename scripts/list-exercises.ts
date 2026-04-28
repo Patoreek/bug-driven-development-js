@@ -23,6 +23,7 @@ async function main() {
     typescript: "TypeScript",
     testing: "Testing (Unit / Integration)",
     javascript: "JavaScript (Core Language)",
+    leetcode: "LeetCode (Algorithms & Data Structures)",
   };
 
   for (const [cat, exs] of categories) {

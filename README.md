@@ -6,7 +6,7 @@ A hands-on exercise platform for mastering TypeScript, React, Next.js, and Node.
 
 ```bash
 npm install
-npm run exercise:list              # Browse all 110 exercises
+npm run exercise:list              # Browse all 130 exercises
 npm run exercise -- fe-001         # Start an exercise (supports fuzzy match)
 npm run test:exercise              # Run tests against your code
 npm run exercise:hint              # Get a progressive hint
@@ -33,6 +33,7 @@ npm run exercise:check             # Check your solution
 | TypeScript | `ts-` | 12 | Type safety, generics, conditional types, branded types, builders |
 | Testing | `test-` | 15 | Unit tests, mocking, async testing, hooks, parameterized, snapshots |
 | JavaScript | `js-` | 20 | Array methods, sorting, closures, promises, generators, proxies |
+| LeetCode | `lc-` | 20 | Algorithms, data structures, time/space complexity, optimization |
 
 ## Difficulty Scale
 
@@ -54,6 +55,7 @@ exercises/           # Exercise templates (don't edit these)
   typescript/        # ts-001 through ts-012
   testing/           # test-001 through test-015
   javascript/        # js-001 through js-020
+  leetcode/          # lc-001 through lc-020
 sandbox/             # Your working directory (exercises copied here)
 scripts/             # CLI tooling
 shared/test-utils/   # Shared testing infrastructure

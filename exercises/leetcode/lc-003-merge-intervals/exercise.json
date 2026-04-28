@@ -1,0 +1,16 @@
+{
+  "id": "lc-003-merge-intervals",
+  "title": "Merge Intervals",
+  "category": "leetcode",
+  "difficulty": 3,
+  "tags": ["arrays", "sorting", "intervals", "greedy"],
+  "concepts": ["interval merging", "sorting by start time", "greedy algorithms"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

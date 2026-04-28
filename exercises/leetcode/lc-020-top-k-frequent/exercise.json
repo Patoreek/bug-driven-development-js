@@ -1,0 +1,16 @@
+{
+  "id": "lc-020-top-k-frequent",
+  "title": "Top K Frequent Elements",
+  "category": "leetcode",
+  "difficulty": 3,
+  "tags": ["hash-map", "sorting", "bucket-sort", "heap"],
+  "concepts": ["frequency counting", "bucket sort", "sorting vs linear selection"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

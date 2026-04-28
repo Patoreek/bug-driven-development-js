@@ -1,0 +1,16 @@
+{
+  "id": "lc-018-longest-common-subseq",
+  "title": "Longest Common Subsequence",
+  "category": "leetcode",
+  "difficulty": 4,
+  "tags": ["dynamic-programming", "string", "2d-dp"],
+  "concepts": ["2D DP table", "subsequence", "optimal substructure", "overlapping subproblems"],
+  "estimatedMinutes": 30,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ts-012-builder-pattern-types",
+  "title": "Builder Pattern Types: Type-Safe Progressive Construction",
+  "category": "typescript",
+  "difficulty": 5,
+  "tags": ["typescript", "builder-pattern", "generics", "type-state", "conditional-types"],
+  "concepts": ["type-state pattern", "generic state tracking", "intersection types for accumulation", "conditional this types", "compile-time validation"],
+  "estimatedMinutes": 30,
+  "prerequisites": ["ts-003-generic-constraints", "ts-008-conditional-types"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/builderPatternTypes.ts"],
+    "testFiles": ["src/__tests__/builderPatternTypes.test.ts"],
+    "solutionFiles": ["solution/builderPatternTypes.ts"]
+  }
+}

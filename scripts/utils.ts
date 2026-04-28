@@ -12,7 +12,7 @@ export const META_FILE = path.join(SANDBOX_DIR, ".exercise-meta.json");
 export interface ExerciseJson {
   id: string;
   title: string;
-  category: "frontend" | "backend" | "fullstack" | "typescript" | "testing" | "javascript";
+  category: "frontend" | "backend" | "fullstack" | "typescript" | "testing" | "javascript" | "leetcode";
   difficulty: number;
   tags: string[];
   concepts: string[];

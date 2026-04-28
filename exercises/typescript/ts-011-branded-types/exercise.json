@@ -1,0 +1,16 @@
+{
+  "id": "ts-011-branded-types",
+  "title": "Branded Types: Nominal Typing in a Structural World",
+  "category": "typescript",
+  "difficulty": 4,
+  "tags": ["typescript", "branded-types", "nominal-typing", "type-safety", "phantom-types"],
+  "concepts": ["branded types", "nominal vs structural typing", "unique symbol", "type assertions", "domain modeling"],
+  "estimatedMinutes": 25,
+  "prerequisites": ["ts-003-generic-constraints"],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/brandedTypes.ts"],
+    "testFiles": ["src/__tests__/brandedTypes.test.ts"],
+    "solutionFiles": ["solution/brandedTypes.ts"]
+  }
+}
