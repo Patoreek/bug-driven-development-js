@@ -1,35 +1,49 @@
 /**
- * Longest Common Subsequence — Optimal Solution
+ * Longest Common Subsequence
  *
- * 2D DP: O(n * m) time, O(n * m) space.
+ * Given two strings text1 and text2, return the length of their
+ * longest common subsequence. A subsequence is a sequence that can
+ * be derived from another sequence by deleting some or no elements
+ * without changing the order of the remaining elements.
  *
- * dp[i][j] = length of LCS of text1[0..i-1] and text2[0..j-1].
+ * Current approach: Brute force — generates all subsequences of text1
+ * and checks if each is a subsequence of text2. O(2^n * m) time.
  *
- * If text1[i-1] === text2[j-1]: dp[i][j] = dp[i-1][j-1] + 1
- * Else: dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+ * Target: 2D DP table in O(n * m) time.
  */
 
 export function longestCommonSubsequence(
   text1: string,
   text2: string
 ): number {
-  const n = text1.length;
-  const m = text2.length;
+  // Brute force: generate all subsequences of text1,
+  // check each against text2
+  let maxLen = 0;
 
-  // Create (n+1) x (m+1) table initialized to 0
-  const dp: number[][] = Array.from({ length: n + 1 }, () =>
-    new Array(m + 1).fill(0)
-  );
-
-  for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= m; j++) {
-      if (text1[i - 1] === text2[j - 1]) {
-        dp[i][j] = dp[i - 1][j - 1] + 1;
-      } else {
-        dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+  function generateSubsequences(index: number, current: string): void {
+    if (index === text1.length) {
+      if (isSubsequence(current, text2)) {
+        maxLen = Math.max(maxLen, current.length);
       }
+      return;
     }
+
+    // Include current character
+    generateSubsequences(index + 1, current + text1[index]);
+    // Exclude current character
+    generateSubsequences(index + 1, current);
   }
 
-  return dp[n][m];
+  generateSubsequences(0, "");
+  return maxLen;
+}
+
+function isSubsequence(sub: string, str: string): boolean {
+  let si = 0;
+  for (let i = 0; i < str.length && si < sub.length; i++) {
+    if (sub[si] === str[i]) {
+      si++;
+    }
+  }
+  return si === sub.length;
 }

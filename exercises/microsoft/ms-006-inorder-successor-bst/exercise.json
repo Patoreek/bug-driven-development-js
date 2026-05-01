@@ -1,0 +1,16 @@
+{
+  "id": "ms-006-inorder-successor-bst",
+  "title": "Inorder Successor in BST",
+  "category": "microsoft",
+  "difficulty": 3,
+  "tags": ["binary-search-tree", "inorder-traversal"],
+  "concepts": ["BST inorder successor", "BST property exploitation", "iterative tree search"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

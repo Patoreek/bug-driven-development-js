@@ -1,10 +1,18 @@
 /**
- * Number of Islands — Optimal Solution
+ * Number of Islands
  *
- * DFS flood fill: O(m*n) time, O(m*n) space worst case (call stack).
+ * Given an m x n 2D binary grid which represents a map of '1's (land)
+ * and '0's (water), return the number of islands.
  *
- * For each unvisited land cell, increment count and flood-fill to mark
- * all connected land cells as visited (by setting them to '0').
+ * An island is surrounded by water and is formed by connecting adjacent
+ * lands horizontally or vertically. You may assume all four edges of
+ * the grid are surrounded by water.
+ *
+ * Current approach: Counts every land cell as a separate island.
+ * It attempts DFS but doesn't mark visited cells, so connected land
+ * cells are counted multiple times.
+ *
+ * Target: DFS flood fill from each unvisited land cell, mark visited in-place.
  */
 
 export function numIslands(grid: string[][]): number {
@@ -18,6 +26,8 @@ export function numIslands(grid: string[][]): number {
     for (let c = 0; c < cols; c++) {
       if (grid[r][c] === "1") {
         count++;
+        // Bug: DFS doesn't mark cells as visited
+        // This means connected land cells each get counted as separate islands
         dfs(grid, r, c, rows, cols);
       }
     }
@@ -33,13 +43,19 @@ function dfs(
   rows: number,
   cols: number
 ): void {
+  // Bounds check and water check
   if (r < 0 || r >= rows || c < 0 || c >= cols) return;
   if (grid[r][c] !== "1") return;
 
-  grid[r][c] = "0"; // mark as visited
+  // Bug: Missing the crucial line:
+  //   grid[r][c] = "0";  // mark as visited
+  // Without this, the same cell is visited infinitely (stack overflow)
+  // or counted multiple times
 
-  dfs(grid, r + 1, c, rows, cols);
-  dfs(grid, r - 1, c, rows, cols);
-  dfs(grid, r, c + 1, rows, cols);
-  dfs(grid, r, c - 1, rows, cols);
+  // The recursion is also commented out to prevent infinite recursion
+  // since cells are never marked visited
+  // dfs(grid, r + 1, c, rows, cols);
+  // dfs(grid, r - 1, c, rows, cols);
+  // dfs(grid, r, c + 1, rows, cols);
+  // dfs(grid, r, c - 1, rows, cols);
 }

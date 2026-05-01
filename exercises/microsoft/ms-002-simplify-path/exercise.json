@@ -1,0 +1,16 @@
+{
+  "id": "ms-002-simplify-path",
+  "title": "Simplify Path",
+  "category": "microsoft",
+  "difficulty": 2,
+  "tags": ["stack", "string"],
+  "concepts": ["stack data structure", "path parsing", "edge case handling"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

@@ -1,12 +1,14 @@
 /**
- * Binary Tree Level Order Traversal — Optimal Solution
+ * Binary Tree Level Order Traversal
  *
- * BFS with queue, processing one level at a time.
- * O(n) time, O(n) space.
+ * Given the root of a binary tree, return the level order traversal
+ * of its nodes' values (i.e., from left to right, level by level).
  *
- * Key insight: at the start of each iteration, the queue contains
- * exactly all nodes at the current level. Record the queue size,
- * process that many nodes, and their children form the next level.
+ * Current approach: DFS that tracks depth but uses incorrect indexing,
+ * causing nodes to be grouped incorrectly. It also doesn't properly
+ * handle the case where a level's array doesn't exist yet.
+ *
+ * Target: BFS with queue, processing one level at a time.
  */
 
 export class TreeNode {
@@ -60,23 +62,22 @@ export function arrayToTree(arr: (number | null)[]): TreeNode | null {
 export function levelOrder(root: TreeNode | null): number[][] {
   if (root === null) return [];
 
+  // Buggy DFS approach — returns a flat array wrapped in another array
+  // instead of properly separating nodes by level
   const result: number[][] = [];
-  const queue: TreeNode[] = [root];
+  const flat: number[] = [];
 
-  while (queue.length > 0) {
-    const levelSize = queue.length;
-    const currentLevel: number[] = [];
-
-    for (let i = 0; i < levelSize; i++) {
-      const node = queue.shift()!;
-      currentLevel.push(node.val);
-
-      if (node.left) queue.push(node.left);
-      if (node.right) queue.push(node.right);
-    }
-
-    result.push(currentLevel);
+  function dfs(node: TreeNode | null): void {
+    if (node === null) return;
+    flat.push(node.val);
+    dfs(node.left);
+    dfs(node.right);
   }
+
+  dfs(root);
+
+  // Bug: pushes everything as a single level
+  result.push(flat);
 
   return result;
 }

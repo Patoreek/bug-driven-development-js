@@ -1,0 +1,16 @@
+{
+  "id": "ms-008-design-tic-tac-toe",
+  "title": "Design Tic-Tac-Toe",
+  "category": "microsoft",
+  "difficulty": 2,
+  "tags": ["design", "array", "matrix"],
+  "concepts": ["incremental state tracking", "O(1) win detection", "space-time tradeoff"],
+  "estimatedMinutes": 20,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

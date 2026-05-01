@@ -1,27 +1,22 @@
 /**
- * Climbing Stairs — Optimal Solution
+ * Climbing Stairs
  *
- * Bottom-up DP with O(n) time, O(1) space.
+ * You are climbing a staircase. It takes n steps to reach the top.
+ * Each time you can either climb 1 or 2 steps.
+ * In how many distinct ways can you climb to the top?
  *
- * This is essentially the Fibonacci sequence:
- *   ways(n) = ways(n-1) + ways(n-2)
+ * Current approach: Naive recursion O(2^n) — recalculates subproblems
+ * exponentially. Times out on n >= 40.
  *
- * We only need the last two values, so we use two variables
- * instead of an array.
+ * Target: O(n) time, O(1) space using bottom-up DP with two variables.
  */
 
 export function climbStairs(n: number): number {
+  // Naive recursive approach — O(2^n) time
+  // Each call branches into two recursive calls,
+  // recalculating the same subproblems many times
   if (n <= 0) return 1;
   if (n === 1) return 1;
 
-  let prev2 = 1; // ways(0)
-  let prev1 = 1; // ways(1)
-
-  for (let i = 2; i <= n; i++) {
-    const current = prev1 + prev2;
-    prev2 = prev1;
-    prev1 = current;
-  }
-
-  return prev1;
+  return climbStairs(n - 1) + climbStairs(n - 2);
 }

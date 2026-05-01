@@ -1,11 +1,17 @@
 /**
- * Validate Binary Search Tree — Optimal Solution
+ * Validate Binary Search Tree
  *
- * Recursive approach with min/max bounds: O(n) time, O(h) space.
+ * Given the root of a binary tree, determine if it is a valid BST.
  *
- * Each node must be within a valid range. As we recurse left, the
- * current node becomes the new upper bound. As we recurse right,
- * the current node becomes the new lower bound.
+ * A valid BST is defined as:
+ * - The left subtree of a node contains only nodes with keys LESS THAN the node's key.
+ * - The right subtree of a node contains only nodes with keys GREATER THAN the node's key.
+ * - Both left and right subtrees must also be binary search trees.
+ *
+ * Current approach: Only checks immediate children — misses cases where a
+ * deeper node violates the BST property relative to an ancestor.
+ *
+ * Target: Pass min/max bounds recursively.
  */
 
 export class TreeNode {
@@ -57,22 +63,24 @@ export function arrayToTree(arr: (number | null)[]): TreeNode | null {
 }
 
 export function isValidBST(root: TreeNode | null): boolean {
-  function validate(
-    node: TreeNode | null,
-    min: number,
-    max: number
-  ): boolean {
-    if (node === null) return true;
+  if (root === null) return true;
 
-    if (node.val <= min || node.val >= max) {
-      return false;
-    }
+  // Bug: Only checks immediate children, not the full BST invariant
+  // For example, this passes for:
+  //       5
+  //      / \
+  //     1   6
+  //        / \
+  //       3   7     <-- 3 < 5, violates BST (should be > 5)
+  // But this code only checks 3 < 6 (immediate parent), not 3 > 5 (ancestor)
 
-    return (
-      validate(node.left, min, node.val) &&
-      validate(node.right, node.val, max)
-    );
+  if (root.left !== null && root.left.val >= root.val) {
+    return false;
   }
 
-  return validate(root, -Infinity, Infinity);
+  if (root.right !== null && root.right.val <= root.val) {
+    return false;
+  }
+
+  return isValidBST(root.left) && isValidBST(root.right);
 }

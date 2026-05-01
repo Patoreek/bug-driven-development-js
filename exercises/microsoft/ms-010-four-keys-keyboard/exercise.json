@@ -1,0 +1,16 @@
+{
+  "id": "ms-010-four-keys-keyboard",
+  "title": "Four Keys Keyboard",
+  "category": "microsoft",
+  "difficulty": 3,
+  "tags": ["dynamic-programming", "math"],
+  "concepts": ["DP recurrence design", "multiple paste operations", "optimal substructure"],
+  "estimatedMinutes": 25,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

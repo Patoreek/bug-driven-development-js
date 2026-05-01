@@ -42,13 +42,12 @@ describe("fetchWithTimeout", () => {
   });
 
   it("should abort the request when timeout is exceeded", async () => {
-    const abortError = new DOMException("The operation was aborted.", "AbortError");
     const mockFetch = vi.fn().mockImplementation(
       (_url: string, options?: { signal?: AbortSignal }) => {
-        return new Promise((resolve, reject) => {
+        return new Promise((_resolve, reject) => {
           if (options?.signal) {
             options.signal.addEventListener("abort", () => {
-              reject(abortError);
+              reject(new DOMException("The operation was aborted.", "AbortError"));
             });
           }
         });
@@ -57,10 +56,15 @@ describe("fetchWithTimeout", () => {
 
     const responsePromise = fetchWithTimeout("https://api.example.com", 3000, mockFetch);
 
+    // Attach a catch handler before advancing timers to avoid unhandled rejection warning
+    const resultPromise = responsePromise.catch((e) => e);
+
     // Advance past the timeout
     await vi.advanceTimersByTimeAsync(3000);
 
-    await expect(responsePromise).rejects.toThrow(/abort/i);
+    const error = await resultPromise;
+    expect(error).toBeInstanceOf(DOMException);
+    expect(error.message).toMatch(/abort/i);
   });
 
   it("should clear the timeout when fetch succeeds", async () => {

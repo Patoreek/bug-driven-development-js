@@ -1,0 +1,16 @@
+{
+  "id": "ms-012-design-search-autocomplete",
+  "title": "Design Search Autocomplete System",
+  "category": "microsoft",
+  "difficulty": 4,
+  "tags": ["design", "trie", "sorting", "hash-map"],
+  "concepts": ["trie prefix traversal", "frequency-based ranking", "incremental search state"],
+  "estimatedMinutes": 35,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

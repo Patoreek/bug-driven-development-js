@@ -1,0 +1,16 @@
+{
+  "id": "ms-003-reverse-words-string",
+  "title": "Reverse Words in a String (In-Place)",
+  "category": "microsoft",
+  "difficulty": 2,
+  "tags": ["string", "array", "in-place"],
+  "concepts": ["in-place reversal", "two-pass algorithm", "character array manipulation"],
+  "estimatedMinutes": 15,
+  "prerequisites": [],
+  "testCommand": "vitest run",
+  "files": {
+    "buggy": ["src/solution.ts"],
+    "testFiles": ["src/__tests__/solution.test.ts"],
+    "solutionFiles": ["solution/solution.ts"]
+  }
+}

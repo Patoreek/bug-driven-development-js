@@ -1,26 +1,36 @@
 /**
- * Coin Change — Optimal Solution
+ * Coin Change
  *
- * Bottom-up DP: O(amount * coins.length) time, O(amount) space.
+ * You are given an integer array `coins` representing coins of different
+ * denominations and an integer `amount` representing a total amount of money.
+ * Return the fewest number of coins needed to make up that amount.
+ * If that amount cannot be made up, return -1.
  *
- * dp[i] = minimum number of coins to make amount i.
- * For each amount from 1 to target, try every coin denomination.
- * If coin <= i, then dp[i] = min(dp[i], dp[i - coin] + 1).
+ * You may assume that you have an infinite number of each kind of coin.
+ *
+ * Current approach: Greedy — always picks the largest coin first.
+ * This fails for certain coin sets (e.g., coins=[1,3,4], amount=6:
+ * greedy picks 4+1+1=3 coins, but optimal is 3+3=2 coins).
+ *
+ * Target: DP bottom-up — dp[i] = min coins to make amount i.
  */
 
 export function coinChange(coins: number[], amount: number): number {
-  // dp[i] = min coins to make amount i
-  // Initialize with amount + 1 (impossible value, acts as infinity)
-  const dp = new Array(amount + 1).fill(amount + 1);
-  dp[0] = 0;
+  if (amount === 0) return 0;
 
-  for (let i = 1; i <= amount; i++) {
-    for (const coin of coins) {
-      if (coin <= i) {
-        dp[i] = Math.min(dp[i], dp[i - coin] + 1);
-      }
-    }
+  // Greedy approach: sort coins descending, always use largest possible
+  const sorted = [...coins].sort((a, b) => b - a);
+
+  let remaining = amount;
+  let count = 0;
+
+  for (const coin of sorted) {
+    if (remaining <= 0) break;
+    const numCoins = Math.floor(remaining / coin);
+    count += numCoins;
+    remaining -= numCoins * coin;
   }
 
-  return dp[amount] > amount ? -1 : dp[amount];
+  if (remaining !== 0) return -1;
+  return count;
 }

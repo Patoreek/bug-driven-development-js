@@ -1,12 +1,13 @@
 /**
- * Top K Frequent Elements — Optimal Solution
+ * Top K Frequent Elements
  *
- * Bucket sort by frequency: O(n) time, O(n) space.
+ * Given an integer array `nums` and an integer `k`, return the `k`
+ * most frequent elements. You may return the answer in any order.
  *
- * Create an array of buckets where index = frequency.
- * Since no element can appear more than n times, the array
- * is at most size n+1. Walk from highest bucket down,
- * collecting elements until we have k.
+ * Current approach: Count frequencies with a Map, then sort all unique
+ * elements by frequency — O(n log n) due to sorting.
+ *
+ * Target: O(n) using bucket sort by frequency.
  */
 
 export function topKFrequent(nums: number[], k: number): number[] {
@@ -16,25 +17,10 @@ export function topKFrequent(nums: number[], k: number): number[] {
     freqMap.set(num, (freqMap.get(num) ?? 0) + 1);
   }
 
-  // Step 2: Bucket sort — O(n)
-  // buckets[i] = list of numbers that appear exactly i times
-  const buckets: number[][] = new Array(nums.length + 1);
-  for (let i = 0; i <= nums.length; i++) {
-    buckets[i] = [];
-  }
+  // Step 2: Sort all unique elements by frequency — O(n log n)
+  // This is the bottleneck
+  const sorted = [...freqMap.entries()].sort((a, b) => b[1] - a[1]);
 
-  for (const [num, freq] of freqMap) {
-    buckets[freq].push(num);
-  }
-
-  // Step 3: Walk buckets from highest frequency down — O(n)
-  const result: number[] = [];
-  for (let i = buckets.length - 1; i >= 0 && result.length < k; i--) {
-    for (const num of buckets[i]) {
-      result.push(num);
-      if (result.length === k) break;
-    }
-  }
-
-  return result;
+  // Step 3: Take first k elements
+  return sorted.slice(0, k).map(([num]) => num);
 }

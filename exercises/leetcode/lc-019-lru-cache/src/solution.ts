@@ -1,90 +1,66 @@
 /**
- * LRU Cache — Optimal Solution
+ * LRU Cache
  *
- * Hash Map + Doubly Linked List: O(1) for both get and put.
+ * Design a data structure that follows the constraints of a
+ * Least Recently Used (LRU) cache.
  *
- * The doubly linked list maintains access order (head = LRU, tail = MRU).
- * The hash map provides O(1) lookup from key to list node.
+ * Implement the LRUCache class:
+ * - LRUCache(capacity) - Initialize the cache with positive size capacity
+ * - get(key) - Return the value if the key exists, otherwise return -1
+ * - put(key, value) - Update or insert the value. If the cache reaches
+ *   capacity, evict the least recently used key before inserting.
  *
- * Key operations:
- * - get: find node in map, move to tail (MRU), return value
- * - put: if exists, update and move to tail; if new and at capacity,
- *   evict head (LRU), then insert at tail
+ * Current approach: Uses a Map for O(1) lookup, but tracks access order
+ * with an array. `get` is O(1) but eviction in `put` requires scanning
+ * the array for the LRU item — O(n).
+ *
+ * Target: Hash Map + Doubly Linked List for O(1) get and put.
  */
-
-class DLLNode {
-  key: number;
-  value: number;
-  prev: DLLNode | null;
-  next: DLLNode | null;
-
-  constructor(key: number, value: number) {
-    this.key = key;
-    this.value = value;
-    this.prev = null;
-    this.next = null;
-  }
-}
 
 export class LRUCache {
   private capacity: number;
-  private cache: Map<number, DLLNode>;
-  private head: DLLNode; // dummy head (LRU side)
-  private tail: DLLNode; // dummy tail (MRU side)
+  private cache: Map<number, number>;
+  private order: number[]; // tracks access order — least recent at index 0
 
   constructor(capacity: number) {
     this.capacity = capacity;
     this.cache = new Map();
-
-    // Dummy sentinel nodes to avoid null checks
-    this.head = new DLLNode(0, 0);
-    this.tail = new DLLNode(0, 0);
-    this.head.next = this.tail;
-    this.tail.prev = this.head;
+    this.order = [];
   }
 
   get(key: number): number {
-    const node = this.cache.get(key);
-    if (!node) return -1;
+    if (!this.cache.has(key)) return -1;
 
-    // Move to tail (most recently used)
-    this.removeNode(node);
-    this.addToTail(node);
+    // Move key to end (most recently used)
+    // This is O(n) — must find and remove from array
+    const idx = this.order.indexOf(key);
+    if (idx !== -1) {
+      this.order.splice(idx, 1);
+    }
+    this.order.push(key);
 
-    return node.value;
+    return this.cache.get(key)!;
   }
 
   put(key: number, value: number): void {
-    const existingNode = this.cache.get(key);
-
-    if (existingNode) {
-      existingNode.value = value;
-      this.removeNode(existingNode);
-      this.addToTail(existingNode);
+    if (this.cache.has(key)) {
+      // Update existing: move to most recently used
+      this.cache.set(key, value);
+      const idx = this.order.indexOf(key);
+      if (idx !== -1) {
+        this.order.splice(idx, 1);
+      }
+      this.order.push(key);
       return;
     }
 
-    // Evict LRU if at capacity
+    // Evict if at capacity
     if (this.cache.size >= this.capacity) {
-      const lru = this.head.next!;
-      this.removeNode(lru);
-      this.cache.delete(lru.key);
+      const lruKey = this.order.shift()!; // O(n) shift operation
+      this.cache.delete(lruKey);
     }
 
-    const newNode = new DLLNode(key, value);
-    this.addToTail(newNode);
-    this.cache.set(key, newNode);
-  }
-
-  private removeNode(node: DLLNode): void {
-    node.prev!.next = node.next;
-    node.next!.prev = node.prev;
-  }
-
-  private addToTail(node: DLLNode): void {
-    node.prev = this.tail.prev;
-    node.next = this.tail;
-    this.tail.prev!.next = node;
-    this.tail.prev = node;
+    this.cache.set(key, value);
+    this.order.push(key);
   }
 }

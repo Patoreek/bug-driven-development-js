@@ -193,3 +193,44 @@ Each exercise provides a brute-force or incorrect solution. Your task: optimize 
 |----|-------|-----------|------|----------|
 | `lc-019-lru-cache` | LRU Cache | ★★★★☆ | 35m | Hash map + doubly linked list, O(1) ops |
 | `lc-020-top-k-frequent` | Top K Frequent Elements | ★★★☆☆ | 25m | Bucket sort, heap, frequency map |
+
+## Microsoft Interview — LeetCode (12 exercises)
+
+Each exercise provides a brute-force or incorrect solution to a Microsoft interview favorite. Your task: optimize or fix it.
+
+### Strings & Arrays
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `ms-001-valid-palindrome` | Valid Palindrome | ★☆☆☆☆ | 10m | Two pointers, alphanumeric filtering |
+| `ms-002-simplify-path` | Simplify Path | ★★☆☆☆ | 15m | Stack, string parsing |
+| `ms-003-reverse-words-string` | Reverse Words in a String II | ★★☆☆☆ | 15m | In-place reversal, two-pass technique |
+
+### Linked Lists
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `ms-004-merge-k-sorted-lists` | Merge k Sorted Lists | ★★★☆☆ | 25m | Divide and conquer, O(N log k) |
+
+### Trees & BST
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `ms-005-closest-bst-value` | Closest Binary Search Tree Value | ★★☆☆☆ | 15m | BST binary search, O(h) traversal |
+| `ms-006-inorder-successor-bst` | Inorder Successor in BST | ★★★☆☆ | 20m | BST property, successor tracking |
+| `ms-007-largest-bst-subtree` | Largest BST Subtree | ★★★☆☆ | 25m | Post-order traversal, bottom-up validation |
+
+### Design
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `ms-008-design-tic-tac-toe` | Design Tic-Tac-Toe | ★★☆☆☆ | 20m | O(1) move checking, row/col/diag sums |
+| `ms-011-design-excel-sum-formula` | Design Excel Sum Formula | ★★★★★ | 40m | Formula storage, reactive re-evaluation |
+| `ms-012-design-search-autocomplete` | Design Search Autocomplete System | ★★★★☆ | 35m | Trie, prefix search, frequency ranking |
+
+### Math & Dynamic Programming
+
+| ID | Title | Difficulty | Time | Concepts |
+|----|-------|-----------|------|----------|
+| `ms-009-water-jug-problem` | Water and Jug Problem | ★★★☆☆ | 20m | GCD, Bézout's identity |
+| `ms-010-four-keys-keyboard` | 4 Keys Keyboard | ★★★☆☆ | 25m | DP, multi-paste recurrence |

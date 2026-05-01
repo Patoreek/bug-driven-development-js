@@ -1,10 +1,14 @@
 /**
- * Maximum Depth of Binary Tree — Optimal Solution
+ * Maximum Depth of Binary Tree
  *
- * Clean DFS recursion: O(n) time, O(h) space (stack depth).
+ * Given the root of a binary tree, return its maximum depth.
+ * A binary tree's maximum depth is the number of nodes along the longest
+ * path from the root node down to the farthest leaf node.
  *
- * Base case: null node has depth 0.
- * Recursive case: 1 + max(depth of left subtree, depth of right subtree).
+ * Current approach: BFS that counts total nodes processed per level
+ * instead of counting levels. Contains an off-by-one error.
+ *
+ * Target: Clean DFS recursion.
  */
 
 export class TreeNode {
@@ -57,5 +61,21 @@ export function arrayToTree(arr: (number | null)[]): TreeNode | null {
 
 export function maxDepth(root: TreeNode | null): number {
   if (root === null) return 0;
-  return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
+
+  // BFS approach with a bug: counts nodes instead of levels
+  const queue: TreeNode[] = [root];
+  let depth = 0;
+
+  while (queue.length > 0) {
+    const levelSize = queue.length;
+    // Bug: increments depth for each NODE instead of each LEVEL
+    for (let i = 0; i < levelSize; i++) {
+      const node = queue.shift()!;
+      depth++; // <-- should only increment once per level, not per node
+      if (node.left) queue.push(node.left);
+      if (node.right) queue.push(node.right);
+    }
+  }
+
+  return depth;
 }
